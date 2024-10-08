@@ -161,7 +161,8 @@ function sidebarHome() {
       text: 'Developers',
       collapsed: true,
       items: [
-        { text: 'Overview', link: '/developers/overview ' }
+        { text: 'Overview', link: '/developers/overview ' },
+        { text: 'FAQ', link: '/developers/faq' }
       ]
     },
     {

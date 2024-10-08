@@ -8,7 +8,7 @@ NOTE: This section will be continually updated as new questions are received. Ch
 
 A: We have a builders application form found on our [website](https://arch.network); interested developers can also join our [Discord](https://discord.gg/archnetwork), follow us on [X](https://x.com/archntwrk), read our developer [docs](https://docs.arch.network) and clone our [repositories](https://github.com/arch-network) to begin tinkering with contract development and learning more about the architecture.
 
-​https://0chrcuqp28m.typeform.com/to/fTaRfve6?typeform-source=www.arch.network​
+​https://0chrcuqp28m.typeform.com/to/fTaRfve6
 
 **Q: What are the key innovations and values Arch Network plans to bring to the market to stand out from the rest in the early development stage?**
 
@@ -74,7 +74,7 @@ A: Arch will update only the state UTXOs that are used (modified) in the executi
 
 A user can provide a list of UTXOs to the program and the program can also have its own list of UTXOs.  Over the course of its execution, the program can update the state contained in any of those UTXOs (not the UTXO itself, but a shadow copy).  After execution completes, UTXOs that should have changes will be submitted to the blockchain.  The existing UTXOs will be used as inputs (thereby spending them) and new UTXOs will be created that hold the updated state.
 
-**Q: What will be the utility of the Arch token on the arch ecosystem when launched?**
+**Q: What will be the utility of the Arch token on the Arch ecosystem when launched?**
 
 A: The Arch token will be used for gas within the Arch Network as well as will serve as the token that validators will stake behind their Arch nodes. The Arch token will not be needed by developers- nor will it be required for end users of DApps- to deploy programs or otherwise interact with these programs (ie, send transactions).
 
@@ -86,13 +86,13 @@ A: No, programs are deployed and interacted with via BTC, therefore no additiona
 
 A: Gas is paid in Arch. It can also be paid in BTC if the user does not hold Arch as it will be auto-converted on the backend.
 
-**Q: How does a user obtain tokens?**
+**Q: How does a user obtain Arch tokens?**
 
-A: Tokens can be obtained via an upcoming airdrop as well as the TGE (Token Generation Event; date: TBD; likely Q1, 2025).
+A: Arch tokens can be obtained via an upcoming airdrop as well as the TGE (Token Generation Event; date: TBD; likely Q1, 2025).
 
 **Q: Will Arch network work like Babylon chain, and if not what makes it stand out?**
 
-A: Babylon exists to solve a different purpose and is more closely related to projects like EigenLayer whereby Bitcoin is staked and then applied towards a shared security model like in other PoS networks (ie, Cosmos) to earn yield.
+A: Babylon exists to solve a different purpose and is more closely related to projects like [EigenLayer](https://www.eigenlayer.xyz/) whereby Bitcoin is staked and then applied towards a shared security model like in other PoS networks (ie, Cosmos) to earn yield.
 
 **Q: How will my Bitcoins appear within Arch Network?**
 
