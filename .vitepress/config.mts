@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
-  base: "/", 
+  base: "/docs", 
   head: [
     [
       "link",
