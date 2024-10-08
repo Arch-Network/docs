@@ -8,6 +8,68 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
+  base: "/", 
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/favicons/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/favicons/favicon.png",
+        type: "image/png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "shortcut icon",
+        href: "/favicons/favicon.ico",
+        type: "image/x-icon",
+      },
+    ], 
+    ["meta", { name: "msapplication-TileColor", content: "#fff" }],
+    ["meta", { name: "theme-color", content: "#fff" }],
+    [
+      "meta",
+      {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "description",
+        content: "The official documentation of Arch Network.",
+      },
+    ],
+    ["meta", { httpEquiv: "Content-Language", content: "en" }],
+    ["meta", { name: "twitter:image", content: "/logo-light.png" }],
+    [
+      "meta",
+      {
+        name: "twitter:site:domain",
+        content: "tmp-docs.arch.network",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "twitter:url",
+        content: "https://tmp-docs.arch.network",
+      },
+    ],
+    ["meta", { name: "og:image", content: "/logo-light.png" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "Arch" }],
+  ],
   sitemap: {
     hostname: "https://tmp-docs.arch.network",
   },
