@@ -12,7 +12,7 @@ A: We have a builders application form found on our [website](https://arch.netwo
 
 **Q: What are the key innovations and values Arch Network plans to bring to the market to stand out from the rest in the early development stage?**
 
-We are leveraging a multisig with key ownership distributed amongst the Arch validators and secured using threshold-signatures schemes, notably: **FROST** (Flexible Round-Optimized Schnorr Threshold) used in conjunction with **ROAST** (Robust Asynchronous Schnorr Threshold Signatures) to facilitate communication between the signing parties.
+A: We are leveraging a multisig with key ownership distributed amongst the Arch validators and secured using threshold-signatures schemes, notably: **FROST** (Flexible Round-Optimized Schnorr Threshold) used in conjunction with **ROAST** (Robust Asynchronous Schnorr Threshold Signatures) to facilitate communication between the signing parties.
 
 More can be read about these decisions here: https://medium.com/arch-network/a-deep-dive-into-multisig-architecture-on-arch-8ee47f5e20dc​
 
