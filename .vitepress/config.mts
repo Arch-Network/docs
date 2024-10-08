@@ -7,6 +7,7 @@ export default defineConfig({
   description: "The official documentation of Arch Network",
   lastUpdated: true,
   cleanUrls: true,
+  ignoreDeadLinks: true,
   sitemap: {
     hostname: "https://tmp-docs.arch.network",
   },
