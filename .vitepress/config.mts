@@ -116,7 +116,7 @@ function nav() {
     {
       text: "Join the network",
       items: [
-        { text: "Learn", link: "/learn/how-arch-works/overview" },
+        { text: "Learn", link: "/learn/overview" },
         { text: "Run a node", link: "/nodes/overview" },
         { text: "Developers", link: "/developers/overview" },
         { text: "Community", link: "/community/overview" } 
@@ -136,9 +136,13 @@ function sidebarHome() {
           collapsed: true,
           items: [
             {
-              text: 'Introduction',
-              link: '/learn/how-arch-works/overview'
+              text: 'Overview',
+              link: '/learn/overview'
             },
+            {
+              text: 'History of Bitcoin Programmability',
+              link: '/learn/history-of-bitcoin-programmability'
+            }
           ]
         }
       ]
