@@ -133,17 +133,11 @@ function sidebarHome() {
       items: [
         {
           text: 'Overview',
-          collapsed: true,
-          items: [
-            {
-              text: 'Overview',
-              link: '/learn/overview'
-            },
-            {
-              text: 'History of Bitcoin Programmability',
-              link: '/learn/history-of-bitcoin-programmability'
-            }
-          ]
+          link: '/learn/overview'
+        },
+        {
+          text: 'History of Bitcoin Programmability',
+          link: '/learn/history-of-bitcoin-programmability'
         }
       ]
     },
