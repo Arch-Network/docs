@@ -14,26 +14,10 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/favicons/favicon.svg",
-        type: "image/svg+xml",
+        type: 'image/x-icon',
+        href: "/docs/favicon.ico"
       },
     ],
-    [
-      "link",
-      {
-        rel: "icon",
-        href: "/favicons/favicon.png",
-        type: "image/png",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "shortcut icon",
-        href: "/favicons/favicon.ico",
-        type: "image/x-icon",
-      },
-    ], 
     ["meta", { name: "msapplication-TileColor", content: "#fff" }],
     ["meta", { name: "theme-color", content: "#fff" }],
     [
