@@ -135,9 +135,13 @@ function sidebarHome() {
           text: 'Overview',
           link: '/learn/overview'
         },
-        {
-          text: 'History of Bitcoin Programmability',
+        { 
+          text: 'History of Bitcoin Programmability', 
           link: '/learn/history-of-bitcoin-programmability'
+        },
+        { 
+          text: 'The Challenges Facing Bitcoin DeFi', 
+          link: '/learn/challenges-facing-bitcoin-defi'
         }
       ]
     },

@@ -1,6 +1,6 @@
 # History of Bitcoin Programmability
 
-Bitcoin has grown to become a more than trillion-dollar asset since its inception as the first decentralized peer-to-peer electronic cash system proposed in the [Bitcoin whitepaper] (2008). Currently, it is about triple the size of Ethereum, the next largest-blockchain, with all others representing a mere fraction of the total blockchain asset market. 
+Bitcoin has grown to become a more than trillion-dollar asset since its inception as the first decentralized peer-to-peer electronic cash system proposed in the [Bitcoin whitepaper] (2008). Currently, it is about triple the size of [Ethereum], the next largest-blockchain, with all others representing a mere fraction of the total blockchain asset market. 
 
 The sheer scope of Bitcoin adoption gives it unparalleled liquidity and security compared to other blockchains. Yet despite those advantages, its functionality has been relatively confined to digital currency for a number of reasons, including its …
 
@@ -19,6 +19,7 @@ The innovation of ordinals expands Bitcoin’s utility to grow from a financial 
 These developments have further enhanced the future of Bitcoin programmability, setting the stage for a new wave of decentralized applications to be built on the world’s most valuable blockchain.
 
 [Bitcoin whitepaper]: https://bitcoin.org/bitcoin.pdf
+[Ethereum]: https://ethereum.org
 [Script]: https://learnmeabitcoin.com/technical/script/
 [SegWit]: https://learnmeabitcoin.com/beginners/guide/segwit/
 [Ordinal Theory]: https://github.com/ordinals/ord/pull/117/files
