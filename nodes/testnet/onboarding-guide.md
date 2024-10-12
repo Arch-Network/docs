@@ -88,8 +88,6 @@ Validator must provide us with their Peer Id so we can add them to the whitelist
 
 We have seen this happen due to the amount of RPC calls that the Arch node makes to the Bitcoin RPC server. The server gets overwhelmed in trying to handle the volume of requests resulting in the connection being dropped.
 
-As a fix, we recommend setting the `maxconnections` field to ___ within your `bitcoin.conf` .
-
 ### Examples
 
 _Example BTC RPC credentials from Chainstack:_
