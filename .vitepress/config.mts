@@ -18,8 +18,9 @@ export default defineConfig({
         href: "/docs/favicon.ico"
       },
     ],
-    ["meta", { name: "msapplication-TileColor", content: "#fff" }],
-    ["meta", { name: "theme-color", content: "#fff" }],
+    // #fff
+    ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
+    ["meta", { name: "theme-color", content: "#FF9900" }],
     [
       "meta",
       {
@@ -116,16 +117,114 @@ function sidebarHome() {
       collapsed: true,
       items: [
         {
-          text: 'Overview',
-          link: '/learn/overview'
+          text: 'Introduction',
+          link: '/learn/introduction'
         },
-        { 
-          text: 'History of Bitcoin Programmability', 
-          link: '/learn/history-of-bitcoin-programmability'
+        {
+          text: 'History',
+          collapsed: true,
+          items: [
+            { 
+              text: 'History of Bitcoin Programmability', 
+              link: '/learn/history/history-of-bitcoin-programmability'
+            },
+            { 
+              text: 'The Challenges Facing Bitcoin DeFi', 
+              link: '/learn/history/challenges-facing-bitcoin-defi'
+            }
+          ]
         },
-        { 
-          text: 'The Challenges Facing Bitcoin DeFi', 
-          link: '/learn/challenges-facing-bitcoin-defi'
+        {
+          text: 'Ecosystem',
+          collapsed: true,
+          items: [
+            {
+              text: 'Bitcoin-Native vs. Bitcoin L2s & Metaprotocols',
+              link: '/learn/ecosystem/bitcoin-native-vs-l2-metaprotocols'
+            }
+          ]
+        },
+        {
+          text: 'Fundamentals',
+          collapsed: true,
+          items: [
+            {
+              text: 'Overview',
+              link: '/learn/fundamentals/overview'
+            },
+            {
+              text: 'How Arch Works',
+              link: '/learn/fundamentals/how-arch-works'
+            },
+            {
+              text: 'Arch\' Signature Scheme Model (FROST + ROAST)',
+              link: '/learn/fundamentals/arch-signature-scheme-model-frost-roast'
+            },
+            {
+              text: 'Step-by-Step User Journey',
+              link: '/learn/fundamentals/step-by-step-user-journey'
+            },
+            {
+              text: 'Bridgeless Execution',
+              link: '/learn/fundamentals/bridgeless-execution'
+            },
+            {
+              text: 'Decentralized Validation',
+              link: '/learn/fundamentals/decentralized-validation'
+            },
+            {
+              text: 'State Transitions Anchored on Bitcoin',
+              link: '/learn/fundamentals/state-transitions-anchored-on-bitcoin'
+            },
+            {
+              text: 'Minimized Trust Assumptions',
+              link: '/learn/fundamentals/minimized-trust-assumptions'
+            }
+          ]
+        },
+        {
+          text: 'Use Cases',
+          collapsed: true,
+          items: [
+            {
+              text: 'DeFi',
+              collapsed: true,
+              items: [
+                {
+                  text: 'How Arch Unlocks the Core Pillars of DeFi',
+                  link: '/learn/use-cases/defi/how-arch-unlocks-core-pillars-of-defi'
+                },
+                {
+                  text: 'Examples',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'AMMs, DEXs and LPs',
+                      link: '/learn/use-cases/defi/examples/amms-dexs-lps'
+                    },
+                    {
+                      text: 'Stablecoins',
+                      link: '/learn/use-cases/defi/examples/stablecoins'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          text: 'Future',
+          collapsed: true,
+          items: [
+            {
+              text: 'Roadmap',
+              link: '/learn/future/roadmap'
+            },
+            {
+              text: 'Audits',
+              link: '/learn/future/audits'
+            }
+          ]
         }
       ]
     },
@@ -135,12 +234,13 @@ function sidebarHome() {
       items: [
         { text: 'Overview', link: '/nodes/overview' },
         { 
-          text: 'Networks',
+          text: 'Testnet',
           collapsed: true,
           items: [
-            { text: 'Testnet Guide', link: '/nodes/testnet-guide' }
+            { text: 'Onboarding Guide', link: '/nodes/testnet/onboarding-guide' }
           ]
-        }
+        },
+        { text: 'FAQ', link: '/nodes/faq' }
       ]
     },
     {
@@ -148,6 +248,16 @@ function sidebarHome() {
       collapsed: true,
       items: [
         { text: 'Overview', link: '/developers/overview ' },
+        {
+          text: 'Testnet',
+          collapsed: true,
+          items: [
+            {
+              text: 'Onboarding Guide',
+              link: '/developers/testnet/onboarding-guide'
+            }
+          ]
+        },
         { text: 'FAQ', link: '/developers/faq' }
       ]
     },

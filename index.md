@@ -16,12 +16,12 @@ hero:
       link: https://0chrcuqp28m.typeform.com/to/T7JQQikg
     - theme: alt
       text: Introduction
-      link: /learn/overview
+      link: /learn/introduction
 
 features:
   - title: Learn
     details: Arch provides an execution environment for developers who want to extend Bitcoin's functionality further.
-    link: /learn/overview
+    link: /learn/introduction
     icon: 🏗️
   - title: Run a node
     details: Secure the network and earn Arch rewards.
