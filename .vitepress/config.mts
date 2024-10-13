@@ -101,7 +101,7 @@ function nav() {
     {
       text: "Join the network",
       items: [
-        { text: "Learn", link: "/learn/overview" },
+        { text: "Learn", link: "/learn/introduction" },
         { text: "Run a node", link: "/nodes/overview" },
         { text: "Developers", link: "/developers/overview" },
         { text: "Community", link: "/community/overview" } 
