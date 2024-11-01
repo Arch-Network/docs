@@ -249,6 +249,16 @@ function sidebarHome() {
       items: [
         { text: 'Overview', link: '/developers/overview ' },
         {
+          text: 'Guides',
+          collapsed: true,
+          items: [
+            {
+              text: 'Oracle',
+              link: '/developers/guides/oracle'
+            }
+          ]
+        },
+        {
           text: 'Testnet',
           collapsed: true,
           items: [
