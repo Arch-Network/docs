@@ -28,7 +28,7 @@ The leader receives the [RuntimeTransaction](https://docs.arch.network/book/sdk/
 
 **Q: What is the simplest configuration for local testing and which NETWORK mode should we use?**
 
-A: For local testing and familiarization with deploying and running example programs, it's recommended to clone the [arch-node repository](https://github.com/arch-network/arch-node), set the mode to `devnet` in `compose.yaml`.
+A: We recommend starting with the [arch-cli](https://github.com/arch-network/arch-cli).
 
 **Q: Who are the validator nodes?**
 
@@ -36,7 +36,7 @@ A: Currently, there are about 25 validators onboarded into the testnet, all comm
 
 **Q: How is Arch different than an L2?**
 
-A: https://arch-network.gitbook.io/arch-documentation/bitcoin-native-vs.-bitcoin-l2s​
+A: See [Bitcoin Native vs. L2s & Metaprotocols](../learn/ecosystem/bitcoin-native-vs-l2-metaprotocols.md).
 
 **Q: Is the network PoW or PoS?**
 
@@ -56,7 +56,11 @@ A: The program logic (bytecode) and storage (state) lives in a key-value databas
 
 **Q: What is the transaction finalization speed on the network?**
 
-A: A soft confirmation is provided almost instantly (< 1 second), but finalization depends on Bitcoin block confirmations. Transactions are chainable in the mempool, so throughput isn't limited by Bitcoin block time.
+A: A soft confirmation is provided near instantaneously (<1 second), but finalization depends on Bitcoin block confirmations. Transactions are chainable in the mempool, so throughput isn't limited by Bitcoin block time. 
+
+> Note:
+>
+> Proper benchmarking is still needed to provide a factual chart of soft confirmation times.
 
 Since all of these transactions are ultimately controlled by the Arch Network distributed key, Arch can be sure that double spends on its state transactions will not happen.
 
@@ -68,7 +72,7 @@ Someone who is waiting to offer external service or goods in exchange for Bitcoi
 
 A: The network settles transactions immediately after execution, but they are subject to Bitcoin block time delays.
 
-**Q: How does Arch write state to Bitcoin? Is it incremental or is it the full state at any point in time?**
+**Q: How does Arch write state to Bitcoin- is it incremental or is it the full state at any point in time?**
 
 A: Arch will update only the state UTXOs that are used (modified) in the execution of a program call.
 
@@ -80,11 +84,11 @@ A: The Arch token will be used for gas within the Arch Network as well as will s
 
 **Q: Do programs deployed via Arch require a separate gas token?**
 
-A: No, programs are deployed and interacted with via BTC, therefore no additional token is necessary as a either a developer or a user when deploying or otherwise interacting with programs deployed via Arch.
+A: No, programs are deployed and interacted with via Bitcoin, therefore no additional token is necessary as a either a developer or a user when deploying or otherwise interacting with programs deployed via Arch.
 
 **Q: How is gas paid for in the network?**
 
-A: Gas is paid in Arch. It can also be paid in BTC if the user does not hold Arch as it will be auto-converted on the backend.
+A: Gas is paid in Arch. It can also be paid in Bitcoin if the user does not hold Arch as it will be auto-converted on the backend.
 
 **Q: How does a user obtain Arch tokens?**
 
@@ -94,7 +98,7 @@ A: Arch tokens can be obtained via an upcoming airdrop as well as the TGE (Token
 
 A: Babylon exists to solve a different purpose and is more closely related to projects like [EigenLayer](https://www.eigenlayer.xyz/) whereby Bitcoin is staked and then applied towards a shared security model like in other PoS networks (ie, Cosmos) to earn yield.
 
-**Q: How will my Bitcoins appear within Arch Network?**
+**Q: How will my Bitcoin appear within Arch Network?**
 
 A: Your Bitcoin (UTXOs) get stored within the Arch Network multisigs, which is something managed by the program and therefore can be indexed by the block explorer, or the app it is participating in.
 
@@ -106,9 +110,9 @@ A: The main problem is that most Bitcoin is idle; Arch allows for this idle Bitc
 
 A: Hackathons, AMAs, Twitter Spaces, loyalty programs, dedicated Telegram channels between projects-our dev team; we’re working on having more developer resources as well.
 
-**Q: How can the stability of Arch Network transaction fees be ensured under the fluctuation of BTC mainnet transaction fees?**
+**Q: How can the stability of Arch Network transaction fees be ensured under the fluctuation of Bitcoin mainnet transaction fees?**
 
-A: Layer 1 fees can impact the transaction fees to settle back on BTC accordingly. Therefore, it can be expensive during periods of high demand.
+A: Layer 1 fees can impact the transaction fees to settle back on Bitcoin accordingly. Therefore, it can be expensive during periods of high demand.
 
 **Q: Which oracle can be used for a price feed in Rust?**
 
