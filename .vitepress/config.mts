@@ -42,21 +42,21 @@ export default defineConfig({
       "meta",
       {
         name: "twitter:site:domain",
-        content: "tmp-docs.arch.network",
+        content: "docs.arch.network",
       },
     ],
     [
       "meta",
       {
         name: "twitter:url",
-        content: "https://tmp-docs.arch.network",
+        content: "https://docs.arch.network",
       },
     ],
     ["meta", { name: "og:image", content: "/logo-light.png" }],
     ["meta", { name: "apple-mobile-web-app-title", content: "Arch" }],
   ],
   sitemap: {
-    hostname: "https://tmp-docs.arch.network",
+    hostname: "https://docs.arch.network",
   },
   themeConfig: {
     siteTitle: "Arch Documentation",
