@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the Arch Network: the only bridgeless execution platform that unlocks Bitcoin DeFi with Turing-complete smart contracts, known as programs, on the Bitcoin base layer.
+Welcome to the Arch Network: the only bridgeless execution platform that unlocks Bitcoin DeFi on the Bitcoin base layer.
 
 Arch allows developers to tap into the full liquidity and security of the world’s most decentralized blockchain without forcing users to bridge. 
 
@@ -14,4 +14,4 @@ Arch does not require any new op codes or soft forks to function.
 
 Utilizing Arch's innovative design construct, dApp developers can now build with the needed flexibility and robustness without sacrificing self-custody, liquidity and interoperability.
 
-Discover the future of Bitcoin programs with Arch Network.
+Discover the future of Bitcoin programmability with Arch Network.
