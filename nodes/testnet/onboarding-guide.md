@@ -38,7 +38,7 @@ Upon starting up your validator client, you have the ability to generate a uniqu
 
 **Note:** This will only generate a single Peer ID and will not result in a new ID upon subsequent invocations unless the 
 
-Register your peer IDs with us over Telegram and make a callout to me personally: @jonroethke. You will not be eligible without registering your peer ID.
+Register your peer IDs with us over Telegram and make a callout to our team. You will not be eligible without registering your peer ID.
 
 ### Register an RPC Service
 
