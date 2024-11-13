@@ -1,7 +1,8 @@
 # Onboarding Guide
 
 **Table of Contents:**
-- [RPC Endpoints]
+- [Arch Node RPC Endpoints]
+- [Bitcoin RPC Providers]
 - [Bitcoin Testnet4 Faucet]
 - [Explorers]
 ---
@@ -12,12 +13,11 @@ This guide contains the relevant sections for how to connect to the Arch testnet
 
 The Arch testnet is designed to help builder teams deploy their programs and test dapp functionality on a live network. 
 
-## RPC Endpoints
+## Arch Node RPC Endpoints
 
 | Provider | URL |
 |--------|--------|
 | Maestro | <https://arch-testnet.gomaestro-api.org/v0>
-| Arch | <https://rpc-01.test.arch.network/> |
 | Local | <http://localhost:9001/> |
 
 [Maestro] is a leading Web3 infrastructure provider specializing in UTxO-based blockchains, including Bitcoin, Cardano, Dogecoin and Arch. Maestro offers a versatile suite of powerful APIs and advanced developer tools that streamline dApp development, empowering businesses to leverage the full potential of blockchain technology. 
@@ -29,6 +29,14 @@ While you can rely on the RPC service provided by the Arch team as well as Maest
 
 In the spirit of true decentralization, this approach provides the added benefit of resilience; should the other RPC services experience an outage, your dapp (and users) would not be impacted as a result.
 :::
+
+## Bitcoin RPC Providers
+
+Arch dapp developers need an active Bitcoin RPC to point to. Builders can either choose to run a Bitcoin node themselves or should connect with a Bitcoin RPC provider to facilitate communication with the Bitcoin network.
+
+**Providers:**
+
+- [Maestro BTC RPC]
 
 ## Bitcoin Testnet4 Faucet
 
@@ -44,10 +52,15 @@ A Twitter account is needed as a spam-protection measure.
 
 The Arch Network explorer is coming soon.
 
-[RPC Endpoints]: #rpc-endpoints
+<!-- Internal -->
+[Arch Node RPC Endpoints]: #arch-node-rpc-endpoints
+[Bitcoin RPC Providers]: #bitcoin-rpc-providers
 [Bitcoin Testnet4 Faucet]: #bitcoin-testnet4-faucet
 [Explorers]: #explorers
+
+<!-- External -->
 [Maestro]: https://gomaestro.org
 [Sign-up]: https://dashboard.gomaestro.org/login
 [docs]: https://docs.gomaestro.org
+[Maestro BTC RPC]: https://docs.gomaestro.org/bitcoin
 [testnet4 mempool.space faucet]: https://mempool.space/testnet4/faucet

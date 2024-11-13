@@ -58,9 +58,7 @@ Arch nodes are expected to stay aware of Bitcoin's state at all times. Validator
 
 **Providers:**
 
-- [NOWNodes]
-- [Chainstack]
-- [GetBlock]
+- [Maestro]
 
 ### Upgrading Your Node
 If you have a node that is already synced and wish to participate in a software upgrade, refer to the following steps:
@@ -115,15 +113,16 @@ curl $BTC_RPC_URL/$BTC_RPC_KEY -d '{"method":"getblockchaininfo","params":[],"id
 --bitcoin-rpc-password $BTC_RPC_PASS
 ```
 
+<!-- Internal -->
 [Download Validator Client]: #download-validator-client
 [Register a Peer ID]: #register-a-peer-id
 [Register an RPC Service]: #register-an-rpc-service
 [Configure Ports]: #configure-ports
 [Configure BTC Node or RPC Provider]: #configure-btc-node-or-rpc-provider
 [Upgrading Your Node]: #upgrading-your-node
-[Common Problems]: #common-problems
 [Examples]: #examples
-[NOWNodes]: https://nownodes.io/nodes/bitcoin-btc
-[Chainstack]: https://chainstack.com/build-better-with-bitcoin/
-[GetBlock]: https://getblock.io/nodes/btc/
+[Common Problems]: #common-problems
+
+<!-- External -->
+[Maestro]: https://docs.gomaestro.org/bitcoin
 [arch-node releases]: https://github.com/Arch-Network/arch-node/releases

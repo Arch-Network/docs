@@ -2,7 +2,9 @@
 
 The following details frequently asked questions from our validator community.
 
-NOTE: This section will be continually updated as new questions are received. Check back in regularly to ensure you are staying up-to-date!
+:::tip NOTE
+This section will be continually updated as new questions are received. Check back in regularly to ensure you are staying up-to-date!
+:::
 
 **What are the responsibilities of a validator?**
 
@@ -32,5 +34,6 @@ Transaction fees. Arch-aware Dapps intake BTC as a fee payment for instructions
 
 A breakdown about the math behind this distribution and fee structure will be covered in future versions of this document.
 
+<!-- Internal -->
 [Upgrading Your Node]: ./testnet/onboarding-guide.md#upgrading-your-node
 [Testnet Onboarding Guide]: ./testnet/onboarding-guide.md
