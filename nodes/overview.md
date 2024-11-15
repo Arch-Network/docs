@@ -15,4 +15,7 @@ RPC:
 | Regular node        | 500 MB RAM  | Single core | 100 GB SSD | 56 Kbps   |
 | Validator node | 16 GB RAM   | Quad-core   | 10 TB SSD  | 1 Gbps    |
 
-Please provide any feedback on the tutorials and guides. If you notice a bug or issue, feel free to make a pull request or write up a [Github](https://github.com/arch-network/arch-node) issue.
+Please provide any feedback on the tutorials and guides. If you notice a bug or issue, feel free to make a pull request or write up an [issue].
+
+<!-- External -->
+[issue]: https://github.com/arch-network/public-issues
