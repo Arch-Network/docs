@@ -2,7 +2,7 @@
 
 This section highlights the different resources for the Arch community.
 
-- [Discord](https://www.discord.gg/Arch-Network)
+- [Discord](https://discord.gg/archnetwork)
 - [Twitter](https://twitter.com/ArchNtwrk)
 - [Medium](https://medium.com/arch-network)
 - [Arch Network Builders Form]
