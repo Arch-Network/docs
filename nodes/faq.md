@@ -2,7 +2,7 @@
 
 The following details frequently asked questions from our validator community.
 
-:::tip NOTE
+:::info NOTE
 This section will be continually updated as new questions are received. Check back in regularly to ensure you are staying up-to-date!
 :::
 
