@@ -4,6 +4,7 @@
 - [Arch Node RPC Endpoints]
 - [Bitcoin RPC Providers]
 - [Bitcoin Testnet4 Faucet]
+- [Indexers]
 - [Explorers]
 ---
 
@@ -18,7 +19,6 @@ The Arch testnet is designed to help builder teams deploy their programs and tes
 | Provider | URL |
 |--------|--------|
 | Maestro | <https://arch-testnet.gomaestro-api.org/v0>
-| Local | <http://localhost:9001/> |
 
 [Maestro] is a leading Web3 infrastructure provider specializing in UTxO-based blockchains, including Bitcoin, Cardano, Dogecoin and Arch. Maestro offers a versatile suite of powerful APIs and advanced developer tools that streamline dApp development, empowering businesses to leverage the full potential of blockchain technology. 
 
@@ -48,6 +48,12 @@ You can request testnet4 BTC from the [testnet4 mempool.space faucet].
 A Twitter account is needed as a spam-protection measure.
 :::
 
+## Indexers
+
+Should developers need to index the Arch chain, we have open-sourced our rust indexer which can be forked and customized further to fit the needs of your team.
+
+The source code for this indexer can be found in our [arch-rust-indexer] repo.
+
 ## Explorers
 
 The Arch Network explorer is coming soon.
@@ -56,6 +62,7 @@ The Arch Network explorer is coming soon.
 [Arch Node RPC Endpoints]: #arch-node-rpc-endpoints
 [Bitcoin RPC Providers]: #bitcoin-rpc-providers
 [Bitcoin Testnet4 Faucet]: #bitcoin-testnet4-faucet
+[Indexers]: #indexers
 [Explorers]: #explorers
 
 <!-- External -->
@@ -64,3 +71,4 @@ The Arch Network explorer is coming soon.
 [docs]: https://docs.gomaestro.org
 [Maestro BTC RPC]: https://docs.gomaestro.org/bitcoin
 [testnet4 mempool.space faucet]: https://mempool.space/testnet4/faucet
+[arch-rust-indexer]: https://github.com/Arch-Network/arch-rust-indexer
