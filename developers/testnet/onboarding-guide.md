@@ -71,6 +71,7 @@ The Arch Network explorer is coming soon.
 <!-- Internal -->
 [Arch Node RPC Endpoints]: #arch-node-rpc-endpoints
 [Bitcoin RPC Providers]: #bitcoin-rpc-providers
+[Web Wallets]: #web-wallets
 [Bitcoin Testnet4 Faucet]: #bitcoin-testnet4-faucet
 [Indexers]: #indexers
 [Explorers]: #explorers
