@@ -3,6 +3,7 @@
 **Table of Contents:**
 - [Arch Node RPC Endpoints]
 - [Bitcoin RPC Providers]
+- [Web Wallets]
 - [Bitcoin Testnet4 Faucet]
 - [Indexers]
 - [Explorers]
@@ -37,6 +38,15 @@ Arch dapp developers need an active Bitcoin RPC to point to. Builders can either
 **Providers:**
 
 - [Maestro BTC RPC]
+
+## Web Wallets
+Arch is compatible with Bitcoin testnet4.
+
+The following wallets currently support testnet4:
+- [Xverse](https://www.xverse.app/)
+- [Unisat](https://unisat.io/)
+
+_Additional wallets coming soon._
 
 ## Bitcoin Testnet4 Faucet
 
