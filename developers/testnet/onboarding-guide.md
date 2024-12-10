@@ -45,8 +45,8 @@ Arch is compatible with Bitcoin testnet4.
 The following wallets currently support testnet4:
 - [Xverse](https://www.xverse.app/)
 - [Unisat](https://unisat.io/)
-
-_Additional wallets coming soon._
+- [Leather](https://leather.io/)
+- [OKX](https://okx.com)
 
 ## Bitcoin Testnet4 Faucet
 
