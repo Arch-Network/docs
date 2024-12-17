@@ -54,11 +54,7 @@ Ensure that the proper ports are exposed. If you are *NOT* running an RPC servic
 
 ### Configure BTC Node or RPC Provider
 
-Arch nodes are expected to stay aware of Bitcoin's state at all times. Validators can either choose to run a Bitcoin node themselves or should connect with a Bitcoin RPC provider to facilitate communication with the Arch validator client.
-
-**Providers:**
-
-- [Maestro]
+Arch nodes are expected to stay aware of Bitcoin's state at all times. Validators can either choose to run a Bitcoin testnet4 node themselves or should connect with a Bitcoin RPC provider (non-API) to facilitate communication with the Arch validator client.
 
 ### Upgrading Your Node
 If you have a node that is already synced and wish to participate in a software upgrade, refer to the following steps:
@@ -124,5 +120,4 @@ curl $BTC_RPC_URL/$BTC_RPC_KEY -d '{"method":"getblockchaininfo","params":[],"id
 [Common Problems]: #common-problems
 
 <!-- External -->
-[Maestro]: https://docs.gomaestro.org/bitcoin
-[arch-node releases]: https://github.com/Arch-Network/arch-node/releases
+[[arch-node releases]: https://github.com/Arch-Network/arch-node/releases
