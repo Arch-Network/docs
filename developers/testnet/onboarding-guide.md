@@ -5,6 +5,7 @@
 - [Bitcoin RPC Providers]
 - [Web Wallets]
 - [Bitcoin Testnet4 Faucet]
+- [Runes and Ordinals]
 - [Indexers]
 - [Explorers]
 ---
@@ -19,6 +20,7 @@ The Arch testnet is designed to help builder teams deploy their programs and tes
 
 | Provider | URL |
 |--------|--------|
+| Arch | <http://rpc-01.test.arch.network>
 | Maestro | <https://arch-testnet.gomaestro-api.org/v0>
 
 [Maestro] is a leading Web3 infrastructure provider specializing in UTxO-based blockchains, including Bitcoin, Cardano, Dogecoin and Arch. Maestro offers a versatile suite of powerful APIs and advanced developer tools that streamline dApp development, empowering businesses to leverage the full potential of blockchain technology. 
@@ -33,20 +35,19 @@ In the spirit of true decentralization, this approach provides the added benefit
 
 ## Bitcoin RPC Providers
 
-Arch dapp developers need an active Bitcoin RPC to point to. Builders can either choose to run a Bitcoin node themselves or should connect with a Bitcoin RPC provider to facilitate communication with the Bitcoin network.
+Arch dapp developers need an active Bitcoin RPC to point to. Builders can either choose to run a Bitcoin node themselves or can choose to connect with a Bitcoin RPC provider to facilitate communication with the Bitcoin network.
 
 **Providers:**
-
-- [Maestro BTC RPC]
+- [Bitcoin RPC API - Maestro]
 
 ## Web Wallets
 Arch is compatible with Bitcoin testnet4.
 
 The following wallets currently support testnet4:
-- [Xverse](https://www.xverse.app/)
-- [Unisat](https://unisat.io/)
-- [Leather](https://leather.io/)
-- [OKX](https://okx.com)
+- [Xverse]
+- [Unisat]
+- [Leather]
+- [OKX]
 
 ## Bitcoin Testnet4 Faucet
 
@@ -58,11 +59,25 @@ You can request testnet4 BTC from the [testnet4 mempool.space faucet].
 A Twitter account is needed as a spam-protection measure.
 :::
 
+## Runes and Ordinals
+
+The following resources are available for runes/ordinals on Bitcoin Testnet4:
+
+- [Ordinals Explorer - Saturn]
+- [Inscriptions Indexer API - Maestro]
+- [Runes Indexer API - Maestro]
+
 ## Indexers
 
+### Arch Network
 Should developers need to index the Arch chain, we have open-sourced our rust indexer which can be forked and customized further to fit the needs of your team.
 
 The source code for this indexer can be found in our [arch-rust-indexer] repo.
+
+### Bitcoin
+Should developers need to index the Bitcoin chain, the following resources are available for accessing indexed chain data, both mainnet and testnet4.
+
+- [Bitcon Indexer API - Maestro]
 
 ## Explorers
 
@@ -73,6 +88,7 @@ The Arch Network explorer is coming soon.
 [Bitcoin RPC Providers]: #bitcoin-rpc-providers
 [Web Wallets]: #web-wallets
 [Bitcoin Testnet4 Faucet]: #bitcoin-testnet4-faucet
+[Runes and Ordinals]: #runes-and-ordinals
 [Indexers]: #indexers
 [Explorers]: #explorers
 
@@ -80,6 +96,14 @@ The Arch Network explorer is coming soon.
 [Maestro]: https://gomaestro.org
 [Sign-up]: https://dashboard.gomaestro.org/login
 [docs]: https://docs.gomaestro.org
-[Maestro BTC RPC]: https://docs.gomaestro.org/bitcoin
+[Bitcoin RPC API - Maestro]: https://docs.gomaestro.org/bitcoin
+[Xverse]: https://www.xverse.app/
+[Unisat]: https://unisat.io/
+[Leather]: https://leather.io/
+[OKX]: https://okx.com
 [testnet4 mempool.space faucet]: https://mempool.space/testnet4/faucet
 [arch-rust-indexer]: https://github.com/Arch-Network/arch-rust-indexer
+[Ordinals Explorer - Saturn]: https://ord-testnet4.saturnbtc.io/
+[Inscriptions Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#6kTut
+[Runes Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#Kzjqx
+[Bitcon Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#TekXe
