@@ -1,25 +1,34 @@
 /* Custom styles for Arch documentation */
 
-/* Subtle magnification for architecture images on hover */
-/* Container styling to prevent layout shifts */
-.hero .image-container,
-.content img[src*="arch-layers"],
-.content img[src*="architecture"] {
-  overflow: hidden; /* Prevents overflow during scaling */
-  display: inline-block; /* Ensures proper centering */
+/* Very basic image hover effect */
+.VPHero .image-container {
+  /* Keep container stable */
+  display: block;
+  overflow: visible;
 }
 
-/* Image styling for smooth hover effect */
-.hero img,
-img[src*="arch-layers"],
-img[src*="architecture"] {
-  transition: transform 0.2s ease; /* Slightly faster for more subtle effect */
-  transform-origin: center center;
-  display: block; /* Better image handling */
+.VPHero .image-container img {
+  /* Simple scale effect only */
+  transform-origin: center;
+  transition: transform 0.15s ease-out;
+  /* Try to stabilize positioning */
+  display: block;
+  margin: 0 auto;
 }
 
-.hero img:hover,
-img[src*="arch-layers"]:hover,
-img[src*="architecture"]:hover {
-  transform: scale(1.05); /* Subtle 5% scaling */
-} 
+.VPHero .image-container img:hover {
+  transform: scale(1.02); /* Very subtle 2% scale */
+}
+
+/* For all arch-related images */
+img[src*="arch-layers"] {
+  transform-origin: center;
+  transition: transform 0.15s ease-out;
+  /* Try to stabilize positioning */
+  display: block;
+  margin: 0 auto;
+}
+
+img[src*="arch-layers"]:hover {
+  transform: scale(1.02); /* Very subtle 2% scale */
+}
