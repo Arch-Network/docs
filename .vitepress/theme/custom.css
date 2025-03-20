@@ -40,3 +40,130 @@ img[src*="arch-layers"] {
 img[src*="arch-layers"]:hover {
   transform: scale(1.02); /* Very subtle 2% scale */
 }
+
+/* Global responsive styles */
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vp-doc table {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.vp-doc pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 767px) {
+  /* Hero section adjustments for mobile */
+  .VPHero {
+    padding: 2rem 1.5rem;
+  }
+  
+  .VPHero .main {
+    flex-direction: column;
+  }
+  
+  .VPHero .name,
+  .VPHero .text {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .VPHero .image-container img {
+    max-width: 85%;
+    transform: translateZ(0) translate(0, 0);
+  }
+  
+  .VPHero .image-container img:hover {
+    transform: scale(1.02) translate(0, 0);
+  }
+  
+  /* Features section on mobile */
+  .VPFeatures .items {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Content spacing adjustments for mobile */
+  .VPDoc {
+    padding: 0 1rem;
+  }
+  
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+  }
+  
+  .vp-doc p,
+  .vp-doc ul,
+  .vp-doc ol {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+  }
+  
+  /* Force table to be scrollable on mobile */
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .VPHero .image-container img {
+    max-width: 90%;
+  }
+  
+  .VPFeatures .items {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Content layout for tablets */
+  .VPDoc {
+    padding: 0 2rem;
+  }
+  
+  /* Improved table layout for tablets */
+  .vp-doc table {
+    font-size: 0.95rem;
+  }
+  
+  /* Better code block display */
+  .vp-doc pre {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small improvements for larger screens */
+@media (min-width: 1024px) {
+  .VPContent {
+    max-width: 100%;
+  }
+  
+  /* Better content width for large screens */
+  .VPDoc.has-aside .content-container {
+    max-width: 80%;
+  }
+  
+  /* Ensure tables remain readable on larger screens */
+  .vp-doc table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: table;
+  }
+}
