@@ -50,7 +50,20 @@ img[src*="arch-layers"]:hover {
 .vp-doc table {
   width: 100%;
   display: table;
-  table-layout: fixed;
+  table-layout: auto;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.vp-doc table th {
+  font-weight: 600;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc table th, 
+.vp-doc table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--vp-c-divider);
 }
 
 .vp-doc pre {
@@ -119,6 +132,43 @@ img[src*="arch-layers"]:hover {
     display: block;
     overflow-x: auto;
     width: 100%;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  
+  .vp-doc table th,
+  .vp-doc table td {
+    padding: 0.5rem;
+  }
+  
+  /* Sidebar improvements */
+  .VPSidebar {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .VPSidebarItem.level-0 > .item .text {
+    font-size: 0.95rem;
+  }
+  
+  .VPSidebarItem.level-1 > .item .text {
+    font-size: 0.9rem;
+  }
+  
+  .VPSidebarItem.level-2 > .item .text,
+  .VPSidebarItem.level-3 > .item .text {
+    font-size: 0.85rem;
+  }
+  
+  /* Add more space below the sidebar on mobile */
+  .VPSidebar + .VPContent {
+    padding-top: 0.5rem;
+  }
+  
+  /* Hardware requirements table (special case) */
+  table.hardware-requirements,
+  table.node-specs {
+    font-size: 0.75rem;
   }
 }
 

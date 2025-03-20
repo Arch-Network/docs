@@ -23,11 +23,10 @@ const { frontmatter } = useData()
 @media (max-width: 767px) {
   .mobile-header {
     display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 8px;
+    right: 10px;
     z-index: 100;
-    padding: 0.5rem 1rem;
   }
   
   /* Hide the default VitePress mobile menu toggle */
@@ -35,9 +34,14 @@ const { frontmatter } = useData()
     display: none !important;
   }
   
-  /* Adjust content for fixed mobile header */
+  /* Make sure the title doesn't overlap with our menu */
+  .VPNavBarTitle {
+    padding-right: 50px;
+  }
+  
+  /* Adjust content for proper layout */
   .VPContent {
-    padding-top: 60px;
+    padding-top: 0;
   }
   
   /* Make images responsive */
@@ -50,6 +54,8 @@ const { frontmatter } = useData()
   .vp-doc table {
     display: block;
     overflow-x: auto;
+    width: 100%;
+    margin: 1rem 0;
   }
   
   /* Improve code block responsiveness */

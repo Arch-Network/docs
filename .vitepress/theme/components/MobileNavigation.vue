@@ -118,10 +118,11 @@ const getSocialIcon = (icon) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: transparent;
-    border: none;
+    width: 40px;
+    height: 40px;
+    background: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-divider-light);
+    border-radius: 6px;
     cursor: pointer;
     padding: 0;
     z-index: 201;
@@ -129,8 +130,8 @@ const getSocialIcon = (icon) => {
   }
 
   .hamburger {
-    width: 20px;
-    height: 16px;
+    width: 18px;
+    height: 14px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -147,7 +148,7 @@ const getSocialIcon = (icon) => {
   }
 
   .hamburger.is-active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
 
   .hamburger.is-active span:nth-child(2) {
@@ -155,7 +156,7 @@ const getSocialIcon = (icon) => {
   }
 
   .hamburger.is-active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   .mobile-nav-overlay {
