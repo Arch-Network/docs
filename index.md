@@ -19,7 +19,7 @@ hero:
       link: /learn/introduction
     - theme: alt
       text: Arch Book
-      link: /book
+      link: https://docs.arch.network/book
 
 features:
   - title: Learn
