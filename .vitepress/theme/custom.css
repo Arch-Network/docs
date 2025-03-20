@@ -40,3 +40,29 @@ img[src*="arch-layers"] {
 img[src*="arch-layers"]:hover {
   transform: scale(1.02); /* Very subtle 2% scale */
 }
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  /* Ensure elements don't overflow */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Better spacing */
+  .VPContent.is-home {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Improved typography for mobile */
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Better card layouts on mobile */
+  .VPFeature {
+    flex-basis: 100% !important;
+  }
+}
