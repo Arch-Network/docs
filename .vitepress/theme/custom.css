@@ -23,7 +23,7 @@
 }
 
 .VPHero .image-container img:hover {
-  transform: scale(1.1) translate(-50%, -50%); /* Keep the same positioning adjustment when scaled */
+  transform: scale(1.02) translate(-50%, -50%); /* Keep the same positioning adjustment when scaled */
 }
 
 /* For all arch-related images */
