@@ -25,27 +25,58 @@
       </div>
       
       <div class="mobile-nav-content">
-        <div class="mobile-nav-section">
-          <h3>Main Navigation</h3>
-          <a 
-            v-for="navItem in navItems" 
-            :key="navItem.text" 
-            :href="navItem.link" 
-            class="mobile-nav-link"
-            @click="closeMenu"
-          >
-            {{ navItem.text }}
+        <!-- Main navigation items -->
+        <div class="mobile-nav-categories">
+          <a href="/learn/introduction" class="mobile-nav-category">
+            <div class="mobile-nav-category-icon">🏗️</div>
+            <div class="mobile-nav-category-text">
+              <h3>Learn</h3>
+              <p>Introduction to Arch Network</p>
+            </div>
+          </a>
+          
+          <a href="/nodes/overview" class="mobile-nav-category">
+            <div class="mobile-nav-category-icon">🔒</div>
+            <div class="mobile-nav-category-text">
+              <h3>Run a node</h3>
+              <p>Node types and requirements</p>
+            </div>
+          </a>
+          
+          <a href="/developers/overview" class="mobile-nav-category">
+            <div class="mobile-nav-category-icon">⚙️</div>
+            <div class="mobile-nav-category-text">
+              <h3>Developers</h3>
+              <p>Build on Arch</p>
+            </div>
+          </a>
+          
+          <a href="/community/overview" class="mobile-nav-category">
+            <div class="mobile-nav-category-icon">🏰</div>
+            <div class="mobile-nav-category-text">
+              <h3>Community</h3>
+              <p>Join the Arch community</p>
+            </div>
           </a>
         </div>
         
+        <!-- Secondary links -->
         <div class="mobile-nav-section">
-          <h3>Resources</h3>
-          <a href="/learn/introduction" class="mobile-nav-link" @click="closeMenu">Introduction</a>
-          <a href="/developers/overview" class="mobile-nav-link" @click="closeMenu">Developer Docs</a>
-          <a href="/nodes/overview" class="mobile-nav-link" @click="closeMenu">Run a Node</a>
-          <a href="/community/overview" class="mobile-nav-link" @click="closeMenu">Community</a>
+          <h3>Quick Links</h3>
+          <div class="mobile-nav-links">
+            <a 
+              v-for="navItem in navItems" 
+              :key="navItem.text" 
+              :href="navItem.link" 
+              class="mobile-nav-link"
+              @click="closeMenu"
+            >
+              {{ navItem.text }}
+            </a>
+          </div>
         </div>
         
+        <!-- Social links -->
         <div class="mobile-nav-section">
           <h3>Connect</h3>
           <div class="mobile-social-links">
@@ -122,7 +153,7 @@ const getSocialIcon = (icon) => {
     height: 40px;
     background: var(--vp-c-bg-soft);
     border: 1px solid var(--vp-c-divider-light);
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     padding: 0;
     z-index: 201;
@@ -167,6 +198,7 @@ const getSocialIcon = (icon) => {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 199;
+    backdrop-filter: blur(4px);
   }
 
   .mobile-nav-menu {
@@ -174,13 +206,13 @@ const getSocialIcon = (icon) => {
     top: 0;
     right: 0;
     width: 85%;
-    max-width: 320px;
+    max-width: 360px;
     height: 100%;
     background-color: var(--vp-c-bg);
     z-index: 200;
     padding: 1rem;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     transform: translateX(100%);
     overflow-y: auto;
     display: flex;
@@ -197,7 +229,7 @@ const getSocialIcon = (icon) => {
     align-items: center;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--vp-c-divider);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .mobile-nav-logo {
@@ -224,37 +256,97 @@ const getSocialIcon = (icon) => {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+  }
+
+  /* App-like categorized menu items */
+  .mobile-nav-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mobile-nav-category {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--vp-c-text-1);
+    transition: all 0.2s ease;
+  }
+
+  .mobile-nav-category:hover,
+  .mobile-nav-category:active {
+    background-color: var(--vp-c-bg-mute);
+    transform: translateY(-2px);
+  }
+
+  .mobile-nav-category-icon {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav-category-text {
+    flex: 1;
+  }
+
+  .mobile-nav-category-text h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+  }
+
+  .mobile-nav-category-text p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--vp-c-text-2);
   }
 
   .mobile-nav-section {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .mobile-nav-section h3 {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--vp-c-text-2);
     margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   .mobile-nav-link {
-    display: block;
-    padding: 0.5rem 0;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-1);
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.2s;
+    font-size: 0.9rem;
+    transition: all 0.2s;
   }
 
   .mobile-nav-link:hover {
+    background-color: var(--vp-c-bg-mute);
     color: var(--vp-c-brand);
   }
 
   .mobile-social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     margin-top: 0.5rem;
   }
 
@@ -267,12 +359,13 @@ const getSocialIcon = (icon) => {
     border-radius: 50%;
     background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-1);
-    transition: background-color 0.2s, color 0.2s;
+    transition: all 0.2s;
   }
 
   .mobile-social-link:hover {
     background-color: var(--vp-c-brand);
     color: white;
+    transform: translateY(-2px);
   }
 
   /* Social icon classes */

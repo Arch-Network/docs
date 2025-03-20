@@ -71,132 +71,206 @@ img[src*="arch-layers"]:hover {
   overflow-x: auto;
 }
 
-/* Mobile Responsive Styles */
+/* Mobile First Approach - Core Mobile Styles */
 @media (max-width: 767px) {
-  /* Hero section adjustments for mobile */
-  .VPHero {
-    padding: 2rem 1.5rem;
-  }
-  
-  .VPHero .main {
-    flex-direction: column;
-  }
-  
-  .VPHero .name,
-  .VPHero .text {
-    font-size: 2rem;
-    letter-spacing: -0.5px;
-  }
-  
-  .VPHero .tagline {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-  
-  .VPHero .image-container img {
-    max-width: 85%;
-    transform: translateZ(0) translate(0, 0);
-  }
-  
-  .VPHero .image-container img:hover {
-    transform: scale(1.02) translate(0, 0);
-  }
-  
-  /* Features section on mobile */
-  .VPFeatures .items {
-    grid-template-columns: 1fr;
-  }
-  
-  /* Content spacing adjustments for mobile */
-  .VPDoc {
-    padding: 0 1rem;
-  }
-  
-  .vp-doc h1,
-  .vp-doc h2,
-  .vp-doc h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.25;
-  }
-  
-  .vp-doc p,
-  .vp-doc ul,
-  .vp-doc ol {
-    margin: 0.75rem 0;
+  /* Mobile-specific layout adjustments */
+  body {
+    font-size: 16px;
     line-height: 1.6;
   }
   
-  /* Force table to be scrollable on mobile */
+  /* Improve navigation experience */
+  .VPNav {
+    height: auto !important;
+    border-bottom: 1px solid var(--vp-c-divider);
+  }
+  
+  /* Improved content layout for mobile */
+  .VPContent {
+    padding: 0 !important;
+  }
+  
+  .VPDoc {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Main content container */
+  .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Improve reading experience */
+  .vp-doc h1 {
+    font-size: 1.8rem !important;
+    margin-top: 1rem !important;
+    padding-top: 0.5rem !important;
+  }
+  
+  .vp-doc h2 {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .vp-doc h3 {
+    font-size: 1.2rem !important;
+    margin-top: 1.2rem !important;
+  }
+  
+  .vp-doc p {
+    margin: 1rem 0 !important;
+    line-height: 1.7 !important;
+  }
+  
+  /* Card-based elements for better mobile UX */
+  .vp-doc div[class*='language-'] {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+  }
+  
+  /* Sidebar improvements */
+  .VPSidebar {
+    padding-top: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Optimize lists for tap targets */
+  .vp-doc ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Better touch targets */
+  .vp-doc a:not(.header-anchor) {
+    display: inline-block;
+    padding: 0.15rem 0;
+  }
+  
+  /* Better navigation for prev/next links */
+  .VPDocFooter .prev-next {
+    flex-direction: column;
+  }
+  
+  .VPDocFooter .prev-next .pager {
+    width: 100% !important;
+    margin: 0.5rem 0 !important;
+    padding: 0.75rem !important;
+  }
+  
+  /* Make header more compact */
+  .VPNavBar {
+    padding: 0 0.75rem !important;
+    height: auto !important;
+  }
+  
+  .VPNavBar .container {
+    height: 3.5rem !important;
+  }
+  
+  .VPNavBar .title {
+    font-size: 1rem !important;
+  }
+  
+  /* Touch-friendly tables */
   .vp-doc table {
     display: block;
     overflow-x: auto;
     width: 100%;
     font-size: 0.85rem;
     white-space: nowrap;
+    border-radius: 0;
+    margin: 1.5rem 0;
   }
   
-  .vp-doc table th,
+  .vp-doc table th {
+    background-color: var(--vp-c-bg-alt);
+    font-weight: 600;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  
   .vp-doc table td {
-    padding: 0.5rem;
-  }
-  
-  /* Sidebar improvements */
-  .VPSidebar {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .VPSidebarItem.level-0 > .item .text {
-    font-size: 0.95rem;
-  }
-  
-  .VPSidebarItem.level-1 > .item .text {
-    font-size: 0.9rem;
-  }
-  
-  .VPSidebarItem.level-2 > .item .text,
-  .VPSidebarItem.level-3 > .item .text {
     font-size: 0.85rem;
   }
   
-  /* Add more space below the sidebar on mobile */
-  .VPSidebar + .VPContent {
-    padding-top: 0.5rem;
+  .vp-doc table tr:nth-child(2n) {
+    background-color: var(--vp-c-bg-soft);
   }
   
-  /* Hardware requirements table (special case) */
-  table.hardware-requirements,
-  table.node-specs {
-    font-size: 0.75rem;
+  /* Make node type tables better on mobile */
+  .vp-doc table tr td:first-child {
+    font-weight: 600;
+  }
+  
+  /* Special styling for node specification tables */
+  .hardware-heading {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  
+  .hardware-heading::before {
+    content: "💻";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Special treatment for tables - match them to screenshot */
+  .vp-doc table th {
+    background-color: var(--vp-c-bg-alt);
+    font-weight: 600;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  
+  .vp-doc table td {
+    font-size: 0.85rem;
+  }
+  
+  .vp-doc table tr:nth-child(2n) {
+    background-color: var(--vp-c-bg-soft);
+  }
+  
+  /* Make node type tables better on mobile */
+  .vp-doc table tr td:first-child {
+    font-weight: 600;
+  }
+  
+  /* Special styling for node specification tables */
+  .vp-doc h2 + table, 
+  .vp-doc h3 + table {
+    margin-top: 1rem;
+  }
+  
+  /* Add mobile-friendly buttons at the bottom */
+  .feedback-box {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Improve links to make them more tap-friendly */
+  .vp-doc a:not(.header-anchor) {
+    display: inline-block;
+    padding: 0.15rem 0;
+  }
+  
+  /* Better blockquotes on mobile */
+  .vp-doc blockquote {
+    border-left: 4px solid var(--vp-c-brand);
+    padding: 0.8rem 1rem;
+    margin: 1.5rem 0;
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 0 8px 8px 0;
   }
 }
 
-/* Tablet Responsive Styles */
+/* Tablet improvements */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .VPHero .image-container img {
-    max-width: 90%;
-  }
-  
-  .VPFeatures .items {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  
-  /* Content layout for tablets */
-  .VPDoc {
-    padding: 0 2rem;
-  }
-  
-  /* Improved table layout for tablets */
-  .vp-doc table {
-    font-size: 0.95rem;
-  }
-  
-  /* Better code block display */
-  .vp-doc pre {
-    font-size: 0.9rem;
-  }
+  /* Maintain tablet-specific adjustments... */
 }
 
 /* Small improvements for larger screens */
