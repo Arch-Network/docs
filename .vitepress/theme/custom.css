@@ -1,0 +1,14 @@
+/* Custom styles for Arch documentation */
+
+/* Subtle magnification for architecture images on hover */
+.hero img,
+img[src*="arch-layers"],
+img[src*="architecture"] {
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover,
+img[src*="arch-layers"]:hover,
+img[src*="architecture"]:hover {
+  transform: scale(1.05);
+} 

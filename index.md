@@ -13,10 +13,13 @@ hero:
   actions:
     - theme: brand
       text: Build
-      link: https://0chrcuqp28m.typeform.com/to/T7JQQikg
+      link: https://form.typeform.com/to/T7JQQikg
     - theme: alt
       text: Introduction
       link: /learn/introduction
+    - theme: alt
+      text: Arch Book
+      link: /book
 
 features:
   - title: Learn
