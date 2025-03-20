@@ -8,14 +8,14 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
-  base: "/docs", 
+  base: "/",
   head: [
     [
       "link",
       {
         rel: "icon",
         type: 'image/x-icon',
-        href: "/docs/favicon.ico"
+        href: "/favicon.ico"
       },
     ],
     [
@@ -24,7 +24,7 @@ export default defineConfig({
         rel: "icon",
         type: 'image/png',
         sizes: '16x16',
-        href: "/docs/favicon-16x16.png"
+        href: "/favicon-16x16.png"
       },
     ],
     [
@@ -33,21 +33,21 @@ export default defineConfig({
         rel: "icon",
         type: 'image/png',
         sizes: '32x32',
-        href: "/docs/favicon-32x32.png"
+        href: "/favicon-32x32.png"
       },
     ],
     [
       "link",
       {
         rel: "apple-touch-icon",
-        href: "/docs/apple-touch-icon.png"
+        href: "/apple-touch-icon.png"
       },
     ],
     [
       "link",
       {
         rel: "manifest",
-        href: "/docs/site.webmanifest"
+        href: "/site.webmanifest"
       },
     ],
     // #fff
