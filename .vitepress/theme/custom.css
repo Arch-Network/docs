@@ -1,14 +1,25 @@
 /* Custom styles for Arch documentation */
 
 /* Subtle magnification for architecture images on hover */
+/* Container styling to prevent layout shifts */
+.hero .image-container,
+.content img[src*="arch-layers"],
+.content img[src*="architecture"] {
+  overflow: hidden; /* Prevents overflow during scaling */
+  display: inline-block; /* Ensures proper centering */
+}
+
+/* Image styling for smooth hover effect */
 .hero img,
 img[src*="arch-layers"],
 img[src*="architecture"] {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease; /* Slightly faster for more subtle effect */
+  transform-origin: center center;
+  display: block; /* Better image handling */
 }
 
 .hero img:hover,
 img[src*="arch-layers"]:hover,
 img[src*="architecture"]:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Subtle 5% scaling */
 } 
