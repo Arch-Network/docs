@@ -18,6 +18,38 @@ export default defineConfig({
         href: "/docs/favicon.ico"
       },
     ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: 'image/png',
+        sizes: '16x16',
+        href: "/docs/favicon-16x16.png"
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: 'image/png',
+        sizes: '32x32',
+        href: "/docs/favicon-32x32.png"
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        href: "/docs/apple-touch-icon.png"
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "manifest",
+        href: "/docs/site.webmanifest"
+      },
+    ],
     // #fff
     ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
     ["meta", { name: "theme-color", content: "#FF9900" }],
