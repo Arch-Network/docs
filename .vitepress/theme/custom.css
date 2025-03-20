@@ -5,28 +5,36 @@
   /* Keep container stable */
   display: block;
   overflow: visible;
+  /* Center image container better */
+  position: relative;
+  text-align: center;
 }
 
 .VPHero .image-container img {
   /* Simple scale effect only */
   transform-origin: center;
   transition: transform 0.15s ease-out;
-  /* Try to stabilize positioning */
+  /* Better positioning */
   display: block;
   margin: 0 auto;
+  position: relative;
+  transform: translateZ(0) translate(-50%, -50%); /* Adjust these values to move the image up and left */
+  max-width: 100%; /* Ensure image doesn't overflow */
 }
 
 .VPHero .image-container img:hover {
-  transform: scale(1.02); /* Very subtle 2% scale */
+  transform: scale(1.1) translate(-50%, -50%); /* Keep the same positioning adjustment when scaled */
 }
 
 /* For all arch-related images */
 img[src*="arch-layers"] {
   transform-origin: center;
   transition: transform 0.15s ease-out;
-  /* Try to stabilize positioning */
+  /* Enhanced stabilization */
   display: block;
   margin: 0 auto;
+  position: relative; /* Establish positioning context */
+  transform: translateZ(0); /* Force GPU acceleration for smoother transitions */
 }
 
 img[src*="arch-layers"]:hover {
