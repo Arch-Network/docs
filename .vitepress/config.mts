@@ -10,14 +10,16 @@ export default defineConfig({
   ignoreDeadLinks: true,
   base: "/docs", 
   head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        type: 'image/x-icon',
-        href: "/docs/favicon.ico"
-      },
-    ],
+    // Basic favicon
+    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    
+    // PNG formats for modern browsers
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
+    
+    // Apple Touch icon
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
+    
     // #fff
     ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
     ["meta", { name: "theme-color", content: "#FF9900" }],
