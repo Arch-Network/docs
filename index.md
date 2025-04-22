@@ -7,9 +7,9 @@ hero:
   name: "Arch Network"
   # text: "Bridgeless Bitcoin Programmability"
   tagline: We are building the permissionless financial rails for a Bitcoin-denominated world.
-  # image:
-  #   src: /layers.jpg
-  #   alt: Arch
+  image:
+    src: /arch-overview.png
+    alt: Arch
   actions:
     - theme: brand
       text: Build
