@@ -8,17 +8,18 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
-  base: "/docs", 
+  base: "/docs/",
+  outDir: ".vitepress/dist",
   head: [
     // Basic favicon
-    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", type: "image/x-icon", href: "/docs/favicon.ico" }],
     
     // PNG formats for modern browsers
-    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
-    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/docs/favicon-16x16.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/docs/favicon-32x32.png" }],
     
     // Apple Touch icon
-    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/docs/apple-touch-icon.png" }],
     
     // #fff
     ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
@@ -39,7 +40,7 @@ export default defineConfig({
       },
     ],
     ["meta", { httpEquiv: "Content-Language", content: "en" }],
-    ["meta", { name: "twitter:image", content: "/logo-light.png" }],
+    ["meta", { name: "twitter:image", content: "/docs/logo-light.png" }],
     [
       "meta",
       {
@@ -54,7 +55,7 @@ export default defineConfig({
         content: "https://docs.arch.network",
       },
     ],
-    ["meta", { name: "og:image", content: "/logo-light.png" }],
+    ["meta", { name: "og:image", content: "/docs/logo-light.png" }],
     ["meta", { name: "apple-mobile-web-app-title", content: "Arch" }],
   ],
   sitemap: {
@@ -86,8 +87,8 @@ export default defineConfig({
 
     logo: {
       alt: "Arch Logo",
-      light: "/logo-light.png",
-      dark: "/logo-light.png",
+      light: "/docs/logo-light.png",
+      dark: "/docs/logo-light.png",
     },
 
     socialLinks: [
