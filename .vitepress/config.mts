@@ -119,112 +119,86 @@ function sidebarHome() {
       collapsed: true,
       items: [
         {
-          text: 'Introduction',
-          link: '/learn/introduction'
+          text: 'Overview',
+          link: '/learn/overview'
         },
         {
-          text: 'History',
-          collapsed: true,
-          items: [
-            { 
-              text: 'History of Bitcoin Programmability', 
-              link: '/learn/history/history-of-bitcoin-programmability'
-            },
-            { 
-              text: 'The Challenges Facing Bitcoin DeFi', 
-              link: '/learn/history/challenges-facing-bitcoin-defi'
-            }
-          ]
+          text: 'The Bitcoin Builder\'s Dilemma',
+          link: '/learn/the-bitcoin-builders-dilemma'
         },
         {
-          text: 'Ecosystem',
-          collapsed: true,
-          items: [
-            {
-              text: 'Bitcoin-Native vs. Bitcoin L2s & Metaprotocols',
-              link: '/learn/ecosystem/bitcoin-native-vs-l2-metaprotocols'
-            }
-          ]
+          text: 'The Arch Unlock',
+          link: '/learn/the-arch-unlock'
         },
         {
-          text: 'Fundamentals',
+          text: 'Bitcoin Ecosystem',
+          link: '/learn/bitcoin-ecosystem.md'
+        },
+        {
+          text: 'Architecture',
           collapsed: true,
           items: [
             {
-              text: 'Overview',
-              link: '/learn/fundamentals/overview'
+              text: 'Architecture Overview',
+              link: '/learn/architecture/overview'
             },
             {
-              text: 'How Arch Works',
-              link: '/learn/fundamentals/how-arch-works'
-            },
-            {
-              text: 'Arch\' Signature Scheme Model (FROST + ROAST)',
-              link: '/learn/fundamentals/arch-signature-scheme-model-frost-roast'
-            },
-            {
-              text: 'Step-by-Step User Journey',
-              link: '/learn/fundamentals/step-by-step-user-journey'
-            },
-            {
-              text: 'Bridgeless Execution',
-              link: '/learn/fundamentals/bridgeless-execution'
-            },
-            {
-              text: 'Decentralized Validation',
-              link: '/learn/fundamentals/decentralized-validation'
-            },
-            {
-              text: 'State Transitions Anchored on Bitcoin',
-              link: '/learn/fundamentals/state-transitions-anchored-on-bitcoin'
-            },
-            {
-              text: 'Minimized Trust Assumptions',
-              link: '/learn/fundamentals/minimized-trust-assumptions'
-            }
-          ]
-        },
-        {
-          text: 'Use Cases',
-          collapsed: true,
-          items: [
-            {
-              text: 'DeFi',
-              collapsed: true,
+              text: 'Consensus',
+              link: '/learn/architecture/consensus/',
               items: [
                 {
-                  text: 'How Arch Unlocks the Core Pillars of DeFi',
-                  link: '/learn/use-cases/defi/how-arch-unlocks-core-pillars-of-defi'
+                  text: 'FROST',
+                  link: '/learn/architecture/consensus/frost'
                 },
                 {
-                  text: 'Examples',
-                  collapsed: true,
-                  items: [
-                    {
-                      text: 'AMMs, DEXs and LPs',
-                      link: '/learn/use-cases/defi/examples/amms-dexs-lps'
-                    },
-                    {
-                      text: 'Stablecoins',
-                      link: '/learn/use-cases/defi/examples/stablecoins'
-                    }
-                  ]
+                  text: 'ROAST',
+                  link: '/learn/architecture/consensus/roast'
                 }
               ]
-            }
-          ]
-        },
-        {
-          text: 'Future',
-          collapsed: true,
-          items: [
-            {
-              text: 'Roadmap',
-              link: '/learn/future/roadmap'
             },
             {
-              text: 'Audits',
-              link: '/learn/future/audits'
+              text: 'Execution',
+              link: '/learn/architecture/execution/',
+              items: [
+                {
+                  text: 'ArchVM and Runtime',
+                  link: '/learn/architecture/execution/archvm-and-runtime'
+                },
+                {
+                  text: 'DAG Transaction Dependency Graph',
+                  link: '/learn/architecture/execution/dag-transaction-dependency-graph'
+                },
+                {
+                  text: 'Rollback/Reapply',
+                  link: '/learn/architecture/execution/rollback-reapply'
+                },
+                {
+                  text: 'Enabling Bitcoin Pre-Confirmations',
+                  link: '/learn/architecture/execution/enabling-bitcoin-pre-confirmations'
+                }
+              ]
+            },
+            {
+              text: 'Bitcoin Integration',
+              link: '/learn/architecture/bitcoin-integration/',
+              items: [
+                {
+                  text: 'Cryptographic Multisig as Smart Contract-Controlled Wallets',
+                  link: '/learn/architecture/bitcoin-integration/cryptographic-multisig-as-smart-contract-controlled-wallets'
+                },
+                {
+                  text: 'Titan Indexer',
+                  link: '/learn/architecture/bitcoin-integration/titan-indexer'
+                }
+              ]
+            },
+            {
+              text: 'Resources',
+              link: '/learn/resources'
+            },
+            {
+              text: 'Running a Node',
+              link: '/learn/running-a-node'
             }
           ]
         }
