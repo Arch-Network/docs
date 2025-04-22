@@ -5,11 +5,11 @@ titleTemplate: ":title"
 
 hero:
   name: "Arch Network"
-  text: "Bridgeless Bitcoin Programmability"
-  tagline: Arch is the only bridgeless execution platform that unlocks Bitcoin DeFi with Turing-complete smart contracts on the Bitcoin base layer.
-  image:
-    src: /arch-layers.png
-    alt: Arch
+  # text: "Bridgeless Bitcoin Programmability"
+  tagline: We are building the permissionless financial rails for a Bitcoin-denominated world.
+  # image:
+  #   src: /layers.jpg
+  #   alt: Arch
   actions:
     - theme: brand
       text: Build
