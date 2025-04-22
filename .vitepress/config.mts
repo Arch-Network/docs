@@ -40,7 +40,7 @@ export default defineConfig({
       },
     ],
     ["meta", { httpEquiv: "Content-Language", content: "en" }],
-    ["meta", { name: "twitter:image", content: "/docs/logo-light.png" }],
+    ["meta", { name: "twitter:image", content: "/logo-light.png" }],
     [
       "meta",
       {
@@ -55,7 +55,7 @@ export default defineConfig({
         content: "https://docs.arch.network",
       },
     ],
-    ["meta", { name: "og:image", content: "/docs/logo-light.png" }],
+    ["meta", { name: "og:image", content: "/logo-light.png" }],
     ["meta", { name: "apple-mobile-web-app-title", content: "Arch" }],
   ],
   sitemap: {
@@ -87,8 +87,8 @@ export default defineConfig({
 
     logo: {
       alt: "Arch Logo",
-      light: "/docs/logo-light.png",
-      dark: "/docs/logo-light.png",
+      light: "/logo-light.png",
+      dark: "/logo-light.png",
     },
 
     socialLinks: [
