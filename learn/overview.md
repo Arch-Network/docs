@@ -6,7 +6,9 @@ Leveraging a novel infrastructure stack, Arch solves the Bitcoin Builder’s Dil
 
 **At its core, Arch combines:**
 
-
+<div style="float: right; margin: 0 0 20px 20px; max-width: 40%;">
+  <img src="/layers.jpg" alt="Arch Network Layers" style="width: 100%; height: auto;" />
+</div>
 
 * **Decentralized Validator Network** that facilitates the seamless coordination of Bitcoin-native transactions and smart contracts via a stake-weighted dPoS consensus.
 * **UTXO-aware Execution Environment** based on the extended Berkeley Packet Filter (eBPF) virtual machine, embedded with custom syscalls that validate UTXOs and post transactions directly onto Bitcoin.
