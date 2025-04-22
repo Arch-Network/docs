@@ -43,6 +43,19 @@ jobs:
         run: yarn install # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: yarn docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Ensure static assets are copied
+        run: |
+          # Make sure the favicon is properly copied
+          if [ -f "public/favicon.ico" ] && [ ! -f ".vitepress/dist/favicon.ico" ]; then
+            cp public/favicon.ico .vitepress/dist/
+          fi
+          # Copy all public files not already in dist
+          for file in public/*; do
+            filename=$(basename "$file")
+            if [ ! -f ".vitepress/dist/$filename" ]; then
+              cp "$file" .vitepress/dist/
+            fi
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
