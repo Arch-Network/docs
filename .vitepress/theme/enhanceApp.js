@@ -21,8 +21,13 @@ export function applyMobileClasses() {
     const paragraphs = document.querySelectorAll('p')
     paragraphs.forEach(p => {
       const text = p.textContent.toLowerCase()
-      if (text.includes('feedback') || text.includes('issue') || 
-          text.includes('request') || text.includes('bug')) {
+      // Only match specific feedback-related phrases, not individual words
+      if (text.includes('send feedback') ||
+          text.includes('report an issue') ||
+          text.includes('submit a bug') ||
+          text.includes('feature request') ||
+          text.includes('submit feedback') ||
+          text.includes('report bug')) {
         p.classList.add('feedback-box')
       }
     })

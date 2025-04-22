@@ -15,8 +15,8 @@ hero:
       text: Build
       link: https://form.typeform.com/to/T7JQQikg
     - theme: alt
-      text: Introduction
-      link: /learn/introduction
+      text: Overview
+      link: /learn/overview
     - theme: alt
       text: Arch Book
       link: https://docs.arch.network/book
@@ -24,7 +24,7 @@ hero:
 features:
   - title: Learn
     details: Arch provides an execution environment for developers who want to extend Bitcoin's functionality further.
-    link: /learn/introduction
+    link: /learn/overview
     icon: 🏗️
   - title: Run a node
     details: Secure the network and earn Arch rewards.
