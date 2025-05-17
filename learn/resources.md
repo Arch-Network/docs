@@ -1,6 +1,6 @@
 # Resources
 
-The Arch Book — [https://www.docs.arch.network/book](https://docs.arch.network/book)
+The Arch Book — [https://www.docs.arch.network/book](https://book.arch.network)
 
 Become an Arch Validator — [https://www.arch.network/validator](https://www.arch.network/validator)
 

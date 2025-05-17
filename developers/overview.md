@@ -1,3 +1,3 @@
 # Developers
 
-See [The Arch Book](https://docs.arch.network/book).
+See [The Arch Book](https://book.arch.network).
