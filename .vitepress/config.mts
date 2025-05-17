@@ -12,14 +12,14 @@ export default defineConfig({
   outDir: ".vitepress/dist",
   head: [
     // Basic favicon
-    ["link", { rel: "icon", type: "image/x-icon", href: "/docs/favicon.ico" }],
+    ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 
     // PNG formats for modern browsers
-    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/docs/favicon-16x16.png" }],
-    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/docs/favicon-32x32.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" }],
+    ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" }],
 
     // Apple Touch icon
-    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/docs/apple-touch-icon.png" }],
+    ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }],
 
     // #fff
     ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
