@@ -8,19 +8,19 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   ignoreDeadLinks: true,
-  base: "/docs/",
+  base: "/",
   outDir: ".vitepress/dist",
   head: [
     // Basic favicon
     ["link", { rel: "icon", type: "image/x-icon", href: "/docs/favicon.ico" }],
-    
+
     // PNG formats for modern browsers
     ["link", { rel: "icon", type: "image/png", sizes: "16x16", href: "/docs/favicon-16x16.png" }],
     ["link", { rel: "icon", type: "image/png", sizes: "32x32", href: "/docs/favicon-32x32.png" }],
-    
+
     // Apple Touch icon
     ["link", { rel: "apple-touch-icon", sizes: "180x180", href: "/docs/apple-touch-icon.png" }],
-    
+
     // #fff
     ["meta", { name: "msapplication-TileColor", content: "#FF9900" }],
     ["meta", { name: "theme-color", content: "#FF9900" }],
@@ -107,7 +107,7 @@ function nav() {
         { text: "Learn", link: "/learn/introduction" },
         { text: "Run a node", link: "/nodes/overview" },
         { text: "Developers", link: "/developers/overview" },
-        { text: "Community", link: "/community/overview" } 
+        { text: "Community", link: "/community/overview" }
       ]
     }
   ]
@@ -210,7 +210,7 @@ function sidebarHome() {
       collapsed: true,
       items: [
         { text: 'Overview', link: '/nodes/overview' },
-        { 
+        {
           text: 'Testnet',
           collapsed: true,
           items: [
