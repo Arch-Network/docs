@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: Arch Book
       link: https://book.arch.network
+    - theme: alt
+      text: Whitepaper
+      link: https://docs.arch.network/whitepaper.pdf
 
 features:
   - title: Learn
