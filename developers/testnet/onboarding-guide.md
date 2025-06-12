@@ -77,7 +77,7 @@ The source code for this indexer can be found in our [arch-rust-indexer] repo.
 ### Bitcoin
 Should developers need to index the Bitcoin chain, the following resources are available for accessing indexed chain data, both mainnet and testnet4.
 
-- [Bitcon Indexer API - Maestro]
+- [Bitcoin Indexer API - Maestro]
 
 ## Explorers
 
@@ -106,4 +106,4 @@ The Arch Network explorer is coming soon.
 [Ordinals Explorer - Saturn]: https://ord-testnet4.saturnbtc.io/
 [Inscriptions Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#6kTut
 [Runes Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#Kzjqx
-[Bitcon Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#TekXe
+[Bitcoin Indexer API - Maestro]: https://docs.gomaestro.org/bitcoin/api-reference#TekXe
