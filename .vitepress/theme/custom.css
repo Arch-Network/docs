@@ -23,7 +23,7 @@
   --vp-c-bg-alt: oklch(98.7% .026 102.212);
   --vp-c-bg-soft: oklch(98.7% .026 102.212);
   --vp-c-bg-elv: oklch(98.7% .026 102.212);
-  --vp-c-bg-mute: oklch(98.7% .026 102.212);
+  --vp-c-bg-mute: #f0f0f0;
   --vp-c-text-1: #000;
   --vp-c-text-2: #000;
   --vp-c-text-3: #000;
@@ -48,6 +48,7 @@
   --vp-button-alt-text: #000;
   --vp-c-neutral: oklch(98.7% .026 102.212);
   --vp-c-neutral-inverse: #000;
+  --vp-c-brand: #5b21b6;
 }
 
 /* Dark Mode */
@@ -56,7 +57,7 @@
   --vp-c-bg-alt: #181636;
   --vp-c-bg-soft: #181636;
   --vp-c-bg-elv: #181636;
-  --vp-c-bg-mute: #181636;
+  --vp-c-bg-mute: #2a2550;
   --vp-c-text-1: #fafafa;
   --vp-c-text-2: #fafafa;
   --vp-c-text-3: #fafafa;
@@ -81,6 +82,28 @@
   --vp-button-alt-text: #fafafa;
   --vp-c-neutral: #181636;
   --vp-c-neutral-inverse: #fafafa;
+  --vp-c-brand: #8b5cf6;
+}
+
+/* VPButton Hover Fix */
+.VPButton.alt:hover {
+  background-color: var(--vp-c-bg-mute) !important;
+  color: var(--vp-c-brand) !important;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand) !important;
+  color: #fff !important;
+}
+
+html:not(.dark) .VPButton.alt:hover {
+  background-color: #f0f0f0 !important;
+  color: #5b21b6 !important;
+}
+
+html.dark .VPButton.alt:hover {
+  background-color: #2a2550 !important;
+  color: #8b5cf6 !important;
 }
 
 /* Remove all box shadows globally */
