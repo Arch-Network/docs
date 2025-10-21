@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+// import { defineConfig } from 'vitepress' prevents the start
 import DefaultTheme from 'vitepress/theme'
 import MobileNavigation from './components/MobileNavigation.vue'
 import ResponsiveTable from './components/ResponsiveTable.vue'
