@@ -300,12 +300,12 @@ img[src*="arch-layers"] {
   overflow-x: auto;
 }
 
-.VPFeature[data-v-e8895942] {
+.VPFeature {
   border: none;
   background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #000) !important;
 }
 
-html.dark .VPFeature[data-v-e8895942] {
+html.dark .VPFeature {
   background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #fff) !important;
 }
 
