@@ -19,11 +19,11 @@
 
 /* Light Mode */
 :root {
-  --vp-c-bg: oklch(98.7% .026 102.212);
-  --vp-c-bg-alt: oklch(98.7% .026 102.212);
-  --vp-c-bg-soft: oklch(98.7% .026 102.212);
-  --vp-c-bg-elv: oklch(98.7% .026 102.212);
-  --vp-c-bg-mute: #f0f0f0;
+  --vp-c-bg: transparent;
+  --vp-c-bg-alt: transparent;
+  --vp-c-bg-soft: rgba(255, 255, 255, 0.3);
+  --vp-c-bg-elv: transparent;
+  --vp-c-bg-mute: rgba(240, 240, 240, 0.4);
   --vp-c-text-1: #000;
   --vp-c-text-2: #000;
   --vp-c-text-3: #000;
@@ -35,29 +35,29 @@
   --vp-shadow-3: none;
   --vp-shadow-4: none;
   --vp-shadow-5: none;
-  --vp-home-hero-name-background: oklch(98.7% .026 102.212);
+  --vp-home-hero-name-background: transparent;
   --vp-home-hero-name-color: #000;
-  --vp-sidebar-bg-color: oklch(98.7% .026 102.212);
-  --vp-nav-bg-color: oklch(98.7% .026 102.212);
-  --vp-local-nav-bg-color: oklch(98.7% .026 102.212);
+  --vp-sidebar-bg-color: rgba(255, 255, 255, 0.5);
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.7);
+  --vp-local-nav-bg-color: rgba(255, 255, 255, 0.7);
   --vp-c-default-1: #000;
   --vp-c-default-2: #000;
   --vp-c-default-3: #000;
-  --vp-c-default-soft: oklch(98.7% .026 102.212);
-  --vp-button-alt-bg: oklch(98.7% .026 102.212);
+  --vp-c-default-soft: transparent;
+  --vp-button-alt-bg: rgba(255, 255, 255, 0.5);
   --vp-button-alt-text: #000;
-  --vp-c-neutral: oklch(98.7% .026 102.212);
+  --vp-c-neutral: transparent;
   --vp-c-neutral-inverse: #000;
   --vp-c-brand: #5b21b6;
 }
 
 /* Dark Mode */
 .dark {
-  --vp-c-bg: #181636;
-  --vp-c-bg-alt: #181636;
-  --vp-c-bg-soft: #181636;
-  --vp-c-bg-elv: #181636;
-  --vp-c-bg-mute: #2a2550;
+  --vp-c-bg: transparent;
+  --vp-c-bg-alt: transparent;
+  --vp-c-bg-soft: rgba(24, 22, 54, 0.3);
+  --vp-c-bg-elv: transparent;
+  --vp-c-bg-mute: rgba(42, 37, 80, 0.4);
   --vp-c-text-1: #fafafa;
   --vp-c-text-2: #fafafa;
   --vp-c-text-3: #fafafa;
@@ -69,18 +69,18 @@
   --vp-shadow-3: none;
   --vp-shadow-4: none;
   --vp-shadow-5: none;
-  --vp-home-hero-name-background: #181636;
+  --vp-home-hero-name-background: transparent;
   --vp-home-hero-name-color: #fafafa;
-  --vp-sidebar-bg-color: #181636;
-  --vp-nav-bg-color: #181636;
-  --vp-local-nav-bg-color: #181636;
+  --vp-sidebar-bg-color: rgba(24, 22, 54, 0.5);
+  --vp-nav-bg-color: rgba(24, 22, 54, 0.7);
+  --vp-local-nav-bg-color: rgba(24, 22, 54, 0.7);
   --vp-c-default-1: #fafafa;
   --vp-c-default-2: #fafafa;
   --vp-c-default-3: #fafafa;
-  --vp-c-default-soft: #181636;
-  --vp-button-alt-bg: #181636;
+  --vp-c-default-soft: transparent;
+  --vp-button-alt-bg: rgba(24, 22, 54, 0.5);
   --vp-button-alt-text: #fafafa;
-  --vp-c-neutral: #181636;
+  --vp-c-neutral: transparent;
   --vp-c-neutral-inverse: #fafafa;
   --vp-c-brand: #8b5cf6;
 }
@@ -127,7 +127,6 @@ html.dark .VPButton.alt:hover {
 }
 
 /* Direct element styles for Light Mode */
-html:not(.dark) body,
 html:not(.dark) #app,
 html:not(.dark) .Layout,
 html:not(.dark) .VPNav,
@@ -144,7 +143,7 @@ html:not(.dark) div[class*="Vp"],
 html:not(.dark) .divider,
 html:not(.dark) aside,
 html:not(.dark) main {
-  background-color: oklch(98.7% .026 102.212) !important;
+  background-color: transparent !important;
   color: #000 !important;
 }
 
@@ -173,7 +172,6 @@ html:not(.dark) .VPSidebar {
 }
 
 /* Direct element styles for Dark Mode */
-html.dark body,
 html.dark #app,
 html.dark .Layout,
 html.dark .VPNav,
@@ -190,7 +188,7 @@ html.dark div[class*="Vp"],
 html.dark .divider,
 html.dark aside,
 html.dark main {
-  background-color: #181636 !important;
+  background-color: transparent !important;
   color: #fafafa !important;
 }
 
@@ -302,11 +300,81 @@ img[src*="arch-layers"] {
 
 .VPFeature {
   border: none;
-  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #000) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 html.dark .VPFeature {
-  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #fff) !important;
+  background-color: rgba(24, 22, 54, 0.2) !important;
+}
+
+.box {
+  border: 1px solid var(--vp-c-brand-1) !important;
+  border-radius: 12px !important;
+}
+
+html:not(.dark) .VPNavBar,
+html:not(.dark) .VPNavBar .container,
+html:not(.dark) .VPNavBar .content,
+html:not(.dark) .VPNavBar .wrapper,
+html:not(.dark) .VPNavBar .title,
+html:not(.dark) .VPNavBar .divider {
+  background-color: oklch(98.7% .026 102.212) !important;
+}
+
+html:not(.dark) .VPNavBar *:not(.VPSwitchAppearance):not(.VPSwitch):not(.check):not([class*="switch"]):not(svg):not(path):not(circle) {
+  color: #000 !important;
+}
+
+html:not(.dark) .VPNavBar svg,
+html:not(.dark) .VPNavBar path {
+  fill: #000 !important;
+}
+
+html.dark .VPNavBar,
+html.dark .VPNavBar .container,
+html.dark .VPNavBar .content,
+html.dark .VPNavBar .wrapper,
+html.dark .VPNavBar .title,
+html.dark .VPNavBar .divider {
+  background-color: #181636 !important;
+}
+
+html.dark .VPNavBar *:not(.VPSwitchAppearance):not(.VPSwitch):not(.check):not([class*="switch"]):not(svg):not(path):not(circle) {
+  color: #fafafa !important;
+}
+
+html.dark .VPNavBar svg,
+html.dark .VPNavBar path {
+  fill: #fafafa !important;
+}
+
+.curtain {
+  background-color: transparent !important;
+}
+
+/* Dark/Light Mode Toggle sichtbar machen */
+html:not(.dark) .VPSwitchAppearance,
+html:not(.dark) .VPSwitch,
+html:not(.dark) .VPSwitchAppearance *,
+html:not(.dark) .VPSwitch * {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+html.dark .VPSwitchAppearance,
+html.dark .VPSwitch,
+html.dark .VPSwitchAppearance *,
+html.dark .VPSwitch * {
+  background-color: transparent !important;
+  color: #fafafa !important;
+}
+
+html:not(.dark) .VPSwitch .check {
+  background-color: #000 !important;
+}
+
+html.dark .VPSwitch .check {
+  background-color: #fafafa !important;
 }
 
 
@@ -533,4 +601,71 @@ html.dark .VPFeature {
     overflow-x: auto;
     display: table;
   }
+}
+
+/* Body background colors */
+body {
+  background-color: oklch(98.7% .026 102.212);
+}
+
+html.dark body {
+  background-color: #181636;
+}
+
+/* Search elements should have backgrounds */
+html:not(.dark) .VPNavBarSearch,
+html:not(.dark) .VPNavBarSearch *,
+html:not(.dark) .DocSearch,
+html:not(.dark) .DocSearch *,
+html:not(.dark) .VPLocalSearchBox,
+html:not(.dark) .VPLocalSearchBox *,
+html:not(.dark) [class*="search"],
+html:not(.dark) [class*="search"] *,
+html:not(.dark) .DocSearch-Modal,
+html:not(.dark) .DocSearch-Modal *,
+html:not(.dark) .DocSearch-Form,
+html:not(.dark) .DocSearch-Input,
+html:not(.dark) .local-search,
+html:not(.dark) .local-search * {
+  background-color: oklch(98.7% .026 102.212) !important;
+  color: #000 !important;
+}
+
+html.dark .VPNavBarSearch,
+html.dark .VPNavBarSearch *,
+html.dark .DocSearch,
+html.dark .DocSearch *,
+html.dark .VPLocalSearchBox,
+html.dark .VPLocalSearchBox *,
+html.dark [class*="search"],
+html.dark [class*="search"] *,
+html.dark .DocSearch-Modal,
+html.dark .DocSearch-Modal *,
+html.dark .DocSearch-Form,
+html.dark .DocSearch-Input,
+html.dark .local-search,
+html.dark .local-search * {
+  background-color: #181636 !important;
+  color: #fafafa !important;
+}
+
+/* Background images for light and dark mode */
+body:before {
+  content: "";
+  opacity: .2;
+  pointer-events: none;
+  z-index: -1;
+  background-image: url(/bg-light.svg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 84vh;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.dark body:before {
+  background-image: url(/bg-dark.svg);
 }
