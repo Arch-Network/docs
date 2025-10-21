@@ -1,44 +1,250 @@
 /* Custom styles for Arch documentation */
 
-/* Very basic image hover effect */
+/* Custom Fonts */
+@font-face {
+  font-family: 'Geist';
+  src: url('/GeistVF.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gascogne';
+  src: url('/GascogneSerial-extraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light Mode */
+:root {
+  --vp-c-bg: oklch(98.7% .026 102.212);
+  --vp-c-bg-alt: oklch(98.7% .026 102.212);
+  --vp-c-bg-soft: oklch(98.7% .026 102.212);
+  --vp-c-bg-elv: oklch(98.7% .026 102.212);
+  --vp-c-bg-mute: oklch(98.7% .026 102.212);
+  --vp-c-text-1: #000;
+  --vp-c-text-2: #000;
+  --vp-c-text-3: #000;
+  --vp-c-border: rgba(0, 0, 0, 0.1);
+  --vp-c-divider: rgba(0, 0, 0, 0.1);
+  --vp-c-gutter: rgba(0, 0, 0, 0.1);
+  --vp-shadow-1: none;
+  --vp-shadow-2: none;
+  --vp-shadow-3: none;
+  --vp-shadow-4: none;
+  --vp-shadow-5: none;
+  --vp-home-hero-name-background: oklch(98.7% .026 102.212);
+  --vp-home-hero-name-color: #000;
+  --vp-sidebar-bg-color: oklch(98.7% .026 102.212);
+  --vp-nav-bg-color: oklch(98.7% .026 102.212);
+  --vp-local-nav-bg-color: oklch(98.7% .026 102.212);
+  --vp-c-default-1: #000;
+  --vp-c-default-2: #000;
+  --vp-c-default-3: #000;
+  --vp-c-default-soft: oklch(98.7% .026 102.212);
+  --vp-button-alt-bg: oklch(98.7% .026 102.212);
+  --vp-button-alt-text: #000;
+  --vp-c-neutral: oklch(98.7% .026 102.212);
+  --vp-c-neutral-inverse: #000;
+}
+
+/* Dark Mode */
+.dark {
+  --vp-c-bg: #181636;
+  --vp-c-bg-alt: #181636;
+  --vp-c-bg-soft: #181636;
+  --vp-c-bg-elv: #181636;
+  --vp-c-bg-mute: #181636;
+  --vp-c-text-1: #fafafa;
+  --vp-c-text-2: #fafafa;
+  --vp-c-text-3: #fafafa;
+  --vp-c-border: rgba(250, 250, 250, 0.1);
+  --vp-c-divider: rgba(250, 250, 250, 0.1);
+  --vp-c-gutter: rgba(250, 250, 250, 0.1);
+  --vp-shadow-1: none;
+  --vp-shadow-2: none;
+  --vp-shadow-3: none;
+  --vp-shadow-4: none;
+  --vp-shadow-5: none;
+  --vp-home-hero-name-background: #181636;
+  --vp-home-hero-name-color: #fafafa;
+  --vp-sidebar-bg-color: #181636;
+  --vp-nav-bg-color: #181636;
+  --vp-local-nav-bg-color: #181636;
+  --vp-c-default-1: #fafafa;
+  --vp-c-default-2: #fafafa;
+  --vp-c-default-3: #fafafa;
+  --vp-c-default-soft: #181636;
+  --vp-button-alt-bg: #181636;
+  --vp-button-alt-text: #fafafa;
+  --vp-c-neutral: #181636;
+  --vp-c-neutral-inverse: #fafafa;
+}
+
+/* Remove all box shadows globally */
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+}
+
+/* Additional element overrides */
+.VPSidebar,
+.VPNav,
+.VPNavBar,
+.VPDoc,
+.VPContent,
+.VPHome,
+.VPFooter,
+.content,
+.container {
+  box-shadow: none !important;
+}
+
+/* Direct element styles for Light Mode */
+html:not(.dark) body,
+html:not(.dark) #app,
+html:not(.dark) .Layout,
+html:not(.dark) .VPNav,
+html:not(.dark) .VPNavBar,
+html:not(.dark) .VPSidebar,
+html:not(.dark) .VPDoc,
+html:not(.dark) .VPContent,
+html:not(.dark) .VPLocalNav,
+html:not(.dark) .VPFooter,
+html:not(.dark) .container,
+html:not(.dark) .content,
+html:not(.dark) .content-container,
+html:not(.dark) div[class*="Vp"],
+html:not(.dark) .divider,
+html:not(.dark) aside,
+html:not(.dark) main {
+  background-color: oklch(98.7% .026 102.212) !important;
+  color: #000 !important;
+}
+
+html:not(.dark) .vp-doc h1,
+html:not(.dark) .vp-doc h2,
+html:not(.dark) .vp-doc h3,
+html:not(.dark) .vp-doc h4,
+html:not(.dark) .vp-doc h5,
+html:not(.dark) .vp-doc h6,
+html:not(.dark) .vp-doc p,
+html:not(.dark) .vp-doc li,
+html:not(.dark) .vp-doc td,
+html:not(.dark) .vp-doc th,
+html:not(.dark) .vp-doc a,
+html:not(.dark) .title,
+html:not(.dark) .text,
+html:not(.dark) .menu-text {
+  color: #000 !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+html:not(.dark) .divider,
+html:not(.dark) .VPNavBar,
+html:not(.dark) .VPSidebar {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Direct element styles for Dark Mode */
+html.dark body,
+html.dark #app,
+html.dark .Layout,
+html.dark .VPNav,
+html.dark .VPNavBar,
+html.dark .VPSidebar,
+html.dark .VPDoc,
+html.dark .VPContent,
+html.dark .VPLocalNav,
+html.dark .VPFooter,
+html.dark .container,
+html.dark .content,
+html.dark .content-container,
+html.dark div[class*="Vp"],
+html.dark .divider,
+html.dark aside,
+html.dark main {
+  background-color: #181636 !important;
+  color: #fafafa !important;
+}
+
+html.dark .vp-doc h1,
+html.dark .vp-doc h2,
+html.dark .vp-doc h3,
+html.dark .vp-doc h4,
+html.dark .vp-doc h5,
+html.dark .vp-doc h6,
+html.dark .vp-doc p,
+html.dark .vp-doc li,
+html.dark .vp-doc td,
+html.dark .vp-doc th,
+html.dark .vp-doc a,
+html.dark .title,
+html.dark .text,
+html.dark .menu-text {
+  color: #fafafa !important;
+  border-color: transparent !important;
+}
+html.dark .divider,
+html.dark .VPNavBar,
+html.dark .VPSidebar {
+  border-color: transparent !important;
+}
+
+
+/* Global font settings */
+body, 
+p,
+li,
+td,
+th,
+.vp-doc,
+.text {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.title {
+  font-family: 'Gascogne', Georgia, serif;
+  font-weight: 200;
+}
+
+/* Image container styling */
 .VPHero .image-container {
-  /* Keep container stable */
   display: block;
   overflow: visible;
-  /* Center image container better */
   position: relative;
   text-align: center;
 }
 
 .VPHero .image-container img {
-  /* Simple scale effect only */
-  transform-origin: center;
-  transition: transform 0.15s ease-out;
-  /* Better positioning */
   display: block;
   margin: 0 auto;
   position: relative;
-  transform: translateZ(0) translate(-50%, -50%); /* Adjust these values to move the image up and left */
-  max-width: 100%; /* Ensure image doesn't overflow */
-}
-
-.VPHero .image-container img:hover {
-  transform: scale(1.02) translate(-50%, -50%); /* Keep the same positioning adjustment when scaled */
+  transform: translateZ(0) translate(-50%, -50%);
+  max-width: 100%;
 }
 
 /* For all arch-related images */
 img[src*="arch-layers"] {
-  transform-origin: center;
-  transition: transform 0.15s ease-out;
-  /* Enhanced stabilization */
   display: block;
   margin: 0 auto;
-  position: relative; /* Establish positioning context */
-  transform: translateZ(0); /* Force GPU acceleration for smoother transitions */
-}
-
-img[src*="arch-layers"]:hover {
-  transform: scale(1.02); /* Very subtle 2% scale */
+  position: relative;
+  transform: translateZ(0);
 }
 
 /* Global responsive styles */
@@ -63,13 +269,23 @@ img[src*="arch-layers"]:hover {
 .vp-doc table th, 
 .vp-doc table td {
   padding: 0.5rem 0.75rem;
-  border: 1px solid var(--vp-c-divider);
+  border: none;
 }
 
 .vp-doc pre {
   max-width: 100%;
   overflow-x: auto;
 }
+
+.VPFeature[data-v-e8895942] {
+  border: none;
+  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #000) !important;
+}
+
+html.dark .VPFeature[data-v-e8895942] {
+  background-color: color-mix(in srgb, var(--vp-c-bg-soft) 98%, #fff) !important;
+}
+
 
 /* Mobile First Approach - Core Mobile Styles */
 @media (max-width: 767px) {
@@ -82,7 +298,7 @@ img[src*="arch-layers"]:hover {
   /* Improve navigation experience */
   .VPNav {
     height: auto !important;
-    border-bottom: 1px solid var(--vp-c-divider);
+    border-bottom: none;
   }
   
   /* Improved content layout for mobile */
@@ -149,6 +365,10 @@ img[src*="arch-layers"]:hover {
   /* Better navigation for prev/next links */
   .VPDocFooter .prev-next {
     flex-direction: column;
+  }
+
+  .prev-next {
+    border-top: 1px solid transparent !important;
   }
   
   .VPDocFooter .prev-next .pager {
@@ -260,7 +480,7 @@ img[src*="arch-layers"]:hover {
   
   /* Better blockquotes on mobile */
   .vp-doc blockquote {
-    border-left: 4px solid var(--vp-c-brand);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
     padding: 0.8rem 1rem;
     margin: 1.5rem 0;
     background-color: var(--vp-c-bg-soft);
