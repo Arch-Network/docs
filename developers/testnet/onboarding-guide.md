@@ -1,7 +1,7 @@
 # Onboarding Guide
 
 **Table of Contents:**
-- [Arch Node RPC Endpoints]
+- [Testnet Configuration]
 - [Bitcoin RPC Providers]
 - [Web Wallets]
 - [Bitcoin Testnet4 Faucet]
@@ -16,22 +16,22 @@ This guide contains the relevant sections for how to connect to the Arch testnet
 
 The Arch testnet is designed to help builder teams deploy their programs and test dapp functionality on a live network. 
 
-## Arch Node RPC Endpoints
+## Testnet Configuration
 
-| Provider | URL |
-|--------|--------|
-| Arch | <http://rpc-01.test.arch.network>
-| Maestro | <https://arch-testnet.gomaestro-api.org/v0>
+Use a remote Bitcoin RPC and a local Arch node for testnet development. Create a configuration profile with:
 
-[Maestro] is a leading Web3 infrastructure provider specializing in UTxO-based blockchains, including Bitcoin, Cardano, Dogecoin and Arch. Maestro offers a versatile suite of powerful APIs and advanced developer tools that streamline dApp development, empowering businesses to leverage the full potential of blockchain technology. 
+```bash
+arch-cli config create-profile testnet \
+    --bitcoin-node-endpoint http://bitcoin-rpc.test.arch.network:80 \
+    --bitcoin-node-username bitcoin \
+    --bitcoin-node-password 0F_Ed53o4kR7nxh3xNaSQx-2M3TY16L55mz5y9fjdrk \
+    --bitcoin-network testnet \
+    --arch-node-url http://localhost:9002
+```
 
-[Sign-up] for an account and consult the [docs] for how to get started using Maestro as your Arch RPC provider.
-
-:::info
-While you can rely on the RPC service provided by the Arch team as well as Maestro, there is also an option to run your own RPC node. 
-
-In the spirit of true decentralization, this approach provides the added benefit of resilience; should the other RPC services experience an outage, your dapp (and users) would not be impacted as a result.
-:::
+::::info
+Run your own local Arch validator node (default RPC at `http://localhost:9002`) for reliability and control. For production-grade resilience, operating your own infrastructure avoids dependency on third-party Arch RPC services.
+::::
 
 ## Bitcoin RPC Providers
 
@@ -55,9 +55,9 @@ In order to participate in the Arch testnet, testnet4 Bitcoin is required to pay
 
 You can request testnet4 BTC from the [testnet4 mempool.space faucet].
 
-:::tip NOTE
+::::tip NOTE
 A Twitter account is needed as a spam-protection measure.
-:::
+::::
 
 ## Runes and Ordinals
 
@@ -84,7 +84,7 @@ Should developers need to index the Bitcoin chain, the following resources are a
 The Arch Network explorer is coming soon.
 
 <!-- Internal -->
-[Arch Node RPC Endpoints]: #arch-node-rpc-endpoints
+[Testnet Configuration]: #testnet-configuration
 [Bitcoin RPC Providers]: #bitcoin-rpc-providers
 [Web Wallets]: #web-wallets
 [Bitcoin Testnet4 Faucet]: #bitcoin-testnet4-faucet
