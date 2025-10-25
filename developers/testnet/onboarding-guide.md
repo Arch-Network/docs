@@ -81,7 +81,7 @@ Should developers need to index the Bitcoin chain, the following resources are a
 
 ## Explorers
 
-The Arch Network explorer is coming soon.
+[https://explorer-beta.test.arch.network]
 
 <!-- Internal -->
 [Testnet Configuration]: #testnet-configuration
