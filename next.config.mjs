@@ -12,6 +12,8 @@ const config = {
   reactStrictMode: true,
   outputFileTracingRoot: __dirname,
   typedRoutes: false,
+  // Enable static export so we can deploy to GitHub Pages
+  output: 'export',
 };
 
 export default withMDX(config);
