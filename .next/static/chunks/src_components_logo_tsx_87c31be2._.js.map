@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/brianhoffman/Projects/docs/src/components/logo.tsx"],"sourcesContent":["'use client';\n\nimport { useTheme } from 'next-themes';\nimport Image from 'next/image';\nimport { useEffect, useState } from 'react';\n\nexport function Logo() {\n  const { resolvedTheme } = useTheme();\n  const [mounted, setMounted] = useState(false);\n\n  useEffect(() => {\n    setMounted(true);\n  }, []);\n\n  if (!mounted) {\n    return (\n      <Image\n        src=\"/arch-logo.svg\"\n        alt=\"Arch Network Logo\"\n        width={100}\n        height={25}\n      />\n    );\n  }\n\n  return (\n    <Image\n      src={resolvedTheme === 'dark' ? '/arch-logo-dark.svg' : '/arch-logo.svg'}\n      alt=\"Arch Network Logo\"\n      width={100}\n      height={25}\n    />\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AACA;;;AAJA;;;;AAMO,SAAS;;IACd,MAAM,EAAE,aAAa,EAAE,GAAG,IAAA,+JAAQ;IAClC,MAAM,CAAC,SAAS,WAAW,GAAG,IAAA,yKAAQ,EAAC;IAEvC,IAAA,0KAAS;0BAAC;YACR,WAAW;QACb;yBAAG,EAAE;IAEL,IAAI,CAAC,SAAS;QACZ,qBACE,6LAAC,2IAAK;YACJ,KAAI;YACJ,KAAI;YACJ,OAAO;YACP,QAAQ;;;;;;IAGd;IAEA,qBACE,6LAAC,2IAAK;QACJ,KAAK,kBAAkB,SAAS,wBAAwB;QACxD,KAAI;QACJ,OAAO;QACP,QAAQ;;;;;;AAGd;GA3BgB;;QACY,+JAAQ;;;KADpB","debugId":null}}]
-}
