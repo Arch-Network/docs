@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/brianhoffman/Projects/docs/src/components/consensus-image.tsx"],"sourcesContent":["'use client';\n\nexport function ConsensusImage() {\n  return (\n    <picture>\n      <source srcSet=\"/Consensus-dark.svg\" media=\"(prefers-color-scheme: dark)\" />\n      <img src=\"/Consensus-light.svg\" alt=\"Arch Consensus Overview\" style={{ width: '100%', height: 'auto' }} />\n    </picture>\n  );\n}\n\n"],"names":[],"mappings":";;;;;AAAA;;AAEO,SAAS;IACd,qBACE,6LAAC;;0BACC,6LAAC;gBAAO,QAAO;gBAAsB,OAAM;;;;;;0BAC3C,6LAAC;gBAAI,KAAI;gBAAuB,KAAI;gBAA0B,OAAO;oBAAE,OAAO;oBAAQ,QAAQ;gBAAO;;;;;;;;;;;;AAG3G;KAPgB","debugId":null}}]
+}
