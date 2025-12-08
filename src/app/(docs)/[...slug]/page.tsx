@@ -1,0 +1,56 @@
+import { source } from '@/lib/source';
+import {
+  DocsBody,
+  DocsDescription,
+  DocsPage,
+  DocsTitle,
+} from 'fumadocs-ui/page';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { createRelativeLink } from 'fumadocs-ui/mdx';
+import { getMDXComponents } from '@/mdx-components';
+
+export default async function Page(props: PageProps<'/[...slug]'>) {
+  const params = await props.params;
+  const page = source.getPage(params.slug);
+  if (!page) notFound();
+
+  const MDXContent = page.data.body;
+
+  return (
+    <DocsPage toc={page.data.toc} full={page.data.full}>
+      <DocsTitle>{page.data.title}</DocsTitle>
+      <DocsDescription>{page.data.description}</DocsDescription>
+      <DocsBody>
+        <MDXContent
+          components={getMDXComponents({
+            // this allows you to link to other pages with relative file paths
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            a: createRelativeLink(source, page) as any,
+          })}
+        />
+      </DocsBody>
+    </DocsPage>
+  );
+}
+
+export async function generateStaticParams() {
+  // Filter out index.md as it's handled by the (home) route
+  return source.generateParams().filter((params) => {
+    // Exclude empty slug (root) and index.md
+    return params.slug && params.slug.length > 0 && params.slug[0] !== 'index';
+  });
+}
+
+export async function generateMetadata(
+  props: PageProps<'/[...slug]'>,
+): Promise<Metadata> {
+  const params = await props.params;
+  const page = source.getPage(params.slug);
+  if (!page) notFound();
+
+  return {
+    title: page.data.title,
+    description: page.data.description,
+  };
+}

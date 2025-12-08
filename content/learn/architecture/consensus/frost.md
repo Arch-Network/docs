@@ -1,0 +1,7 @@
+---
+title: Understanding FROST
+---
+
+FROST (Flexible Round-Optimized Schnorr Threshold) is an advanced threshold signature scheme that enables multiple parties to collectively generate a single valid Schnorr signature while minimizing communication rounds. Its key innovation is achieving single-round signing under ideal conditions. FROST maintains the threshold property where only a specified subset of participants (*t* out of *n*) need to cooperate to produce a valid signature, allowing flexibility when some participants are offline. While prioritizing efficiency over robustness (all participating signers must be honest), FROST incorporates security mechanisms to detect and mitigate forgery attempts by malicious participants. The scheme supports both two-round and optimized single-round signing protocols to accommodate various operational requirements, making it suitable for applications ranging from cryptocurrency transaction signing to secure multi-party consensus in distributed networks.
+
+[Read more about FROST](https://eprint.iacr.org/2020/852.pdf). 
