@@ -4,9 +4,9 @@ title: FAQ
 
 The following details frequently asked questions from our developer community.
 
-:::info NOTE
-This section will be continually updated as new questions are received. Check back in regularly to ensure you are staying up-to-date!
-:::
+<Tip>
+**NOTE:** This section will be continually updated as new questions are received. Check back in regularly to ensure you are staying up-to-date!
+</Tip>
 
 **Q: How do developers and businesses get involved with Arch Network, and what resources and support are available to them?**
 
