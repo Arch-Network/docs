@@ -9,3 +9,5 @@ node_modules
 .vite_opt_cache
 .vscode
 .vercel
+.next
+.source
