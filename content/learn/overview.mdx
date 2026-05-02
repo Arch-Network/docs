@@ -2,9 +2,9 @@
 title: Overview
 ---
 
-**Arch is building the permissionless financial rails for a Bitcoin-denominated world.**
+**Arch is building the financial infrastructure for Bitcoin capital markets.**
 
-Leveraging a novel infrastructure stack, Arch solves the Bitcoin Builder’s Dilemma without a soft fork. 
+Bitcoin is the world’s most trusted store of value — but without risk infrastructure capable of scaling credit, it cannot serve as the foundation for capital markets. Arch solves this.
 
 
 <div className="arch-combines-image">
@@ -14,19 +14,28 @@ Leveraging a novel infrastructure stack, Arch solves the Bitcoin Builder’s Dil
     alt="Arch Network Layers"
   />
 </div>
-**At its core, Arch combines:**
 
-* **Decentralized Validator Network** that facilitates the seamless coordination of Bitcoin-native transactions and smart contracts via a stake-weighted dPoS consensus.
-* **UTXO-aware Execution Environment** based on the extended Berkeley Packet Filter (eBPF) virtual machine, embedded with custom syscalls that validate UTXOs and post transactions directly onto Bitcoin.
-* **Cryptographic Multisig** built on the back of the [FROST](https://eprint.iacr.org/2020/852.pdf) + [ROAST](https://eprint.iacr.org/2022/550.pdf?ref=glossary.blockstream.com) signature schemes, allowing for decentralized programmable execution.
+**The Arch Product Suite:**
 
-Arch unlocks a user and developer experience that previously wasn’t possible on Bitcoin:
+* **Arch Swap:** Native BTC trading with atomic settlement and execution guarantees. Deep liquidity powered by integrated lending markets.
+* **Arch Lend:** Institutional-grade credit and lending. Bitcoin-backed borrowing with 300ms liquidation fidelity — the risk infrastructure that makes scaled lending possible.
+* **Arch Prime:** Portfolio management dashboard for monitoring positions, collateral health, yield performance, and risk exposure across the Arch ecosystem.
+* **Yield Vaults:** Strategy vaults that deploy capital across lending markets and structured products to generate yield on Bitcoin.
+
+These products are vertically integrated by design. Closed-loop liquidity between Arch Swap and Arch Lend enables high liquidation fidelity, which is what makes scaled lending possible. Scaled lending is what unlocks derivatives, structured products, and broader capital markets.
 
 
-* Access the full Arch ecosystem directly from your Bitcoin wallet (Xverse, Unisat, Magic Eden, Ledger, and more) through our seamless Taproot address integration — no bridging, no new wallets, just pure Bitcoin-native interaction.
-* Trust-spectrum flexibility allows developers to either settle transactions directly on Bitcoin or leverage Arch's Bitcoin pre-confirmation system for sub-second block times that deliver an optimal user experience in their applications.
-* Boost Runes and Ordinals liquidity with our Arch-native Titan indexer that scales UTXO capabilities.
 
-Arch is the application layer Bitcoin has been missing, designed to preserve the monetary integrity of pristine BTC while enabling an open, fast, and expressive economy.
+**The Infrastructure:**
+
+At its core, Arch combines:
+
+* A Decentralized Validator Network running stake-weighted dPoS consensus with 300ms block finality
+* A UTXO-aware Execution Environment (ArchVM) based on eBPF, with custom syscalls that orchestrate UTXOs directly on Bitcoin’s base layer
+* Cryptographic threshold signatures (FROST + ROAST) ensuring no transaction is published without majority validator consensus
+* Native Bitcoin settlement — execution output is Bitcoin transactions, settled on the base layer
+
+Users access the entire Arch product suite directly from their existing Bitcoin wallets (Xverse, Unisat, Trezor, Ledger) through seamless Taproot address integration. No bridging and no new wallets.
+
 
 **Arch unlocks the future of finance on Bitcoin.**
