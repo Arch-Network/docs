@@ -1,0 +1,11 @@
+{
+  "title": "Product Suite",
+  "pages": [
+    "overview",
+    "arch-swap",
+    "arch-lend",
+    "arch-prime",
+    "yield-vaults",
+    "integration"
+  ]
+}

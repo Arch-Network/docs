@@ -18,6 +18,12 @@ const DevelopersIcon = () => (
   </svg>
 );
 
+const ProductSuiteIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-12 h-12 fill-[#EC641D] dark:fill-[#B8B3E8]" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z" />
+  </svg>
+);
+
 const CommunityIcon = () => (
   <svg width="284" height="327" viewBox="0 0 284 327" className="w-12 h-12 fill-[#EC641D] dark:fill-[#B8B3E8]" xmlns="http://www.w3.org/2000/svg">
     <path d="M62.4063 54.4088C64.367 56.3583 65.4329 59.0326 65.351 61.7963L63.0137 140.654C62.8466 146.29 67.3704 150.95 73.0093 150.95H212.273C217.98 150.95 222.53 146.181 222.261 140.48L218.565 61.8968C218.433 59.0746 219.5 56.3279 221.504 54.3358L239.56 36.3824C239.821 36.0804 239.97 35.6974 239.981 35.2982V1.50596C239.983 1.30766 239.946 1.11098 239.871 0.927402C239.796 0.743826 239.685 0.577048 239.545 0.436826C239.404 0.296605 239.238 0.185755 239.054 0.110762C238.87 0.0357691 238.674 -0.00186086 238.476 7.39258e-05H197.335C197.136 -0.00190073 196.94 0.0357022 196.756 0.110681C196.573 0.185659 196.406 0.296507 196.266 0.436737C196.125 0.576967 196.014 0.74376 195.939 0.927355C195.864 1.11095 195.827 1.30765 195.829 1.50596V23.792C195.829 29.3149 191.352 33.792 185.829 33.792H173.241C167.718 33.792 163.241 29.3149 163.241 23.792V1.50596C163.243 1.30766 163.206 1.11095 163.131 0.927363C163.056 0.743772 162.945 0.576982 162.805 0.436754C162.664 0.296526 162.498 0.185679 162.314 0.110698C162.13 0.0357161 161.934 -0.00189275 161.735 7.39258e-05H122.101C121.903 -0.00189275 121.706 0.0357161 121.522 0.110698C121.339 0.185679 121.172 0.296526 121.032 0.436754C120.891 0.576982 120.781 0.743772 120.706 0.927363C120.631 1.11095 120.593 1.30766 120.595 1.50596V23.792C120.595 29.3149 116.118 33.792 110.595 33.792H98.0074C92.4845 33.792 88.0074 29.3149 88.0074 23.792V1.50596C88.0094 1.30765 87.9718 1.11095 87.8968 0.927355C87.8218 0.74376 87.7109 0.576967 87.5707 0.436737C87.4305 0.296507 87.2637 0.185659 87.0801 0.110681C86.8965 0.0357022 86.6998 -0.00190073 86.5015 7.39258e-05H45.3607C45.1624 -0.00186086 44.9657 0.0357691 44.7821 0.110762C44.5986 0.185755 44.4318 0.296605 44.2916 0.436826C44.1513 0.577048 44.0405 0.743826 43.9655 0.927402C43.8905 1.11098 43.8529 1.30766 43.8548 1.50596V35.2978C43.8662 35.6971 44.0151 36.0801 44.2765 36.382L62.4063 54.4088ZM105.355 98.4847C107.045 50.0928 176.795 50.0968 178.481 98.4853V120.892C178.484 121.684 178.33 122.469 178.028 123.201C177.726 123.933 177.283 124.598 176.723 125.158C176.163 125.718 175.498 126.161 174.766 126.463C174.034 126.765 173.249 126.919 172.457 126.916H111.379C110.587 126.919 109.802 126.765 109.07 126.463C108.338 126.161 107.673 125.718 107.113 125.158C106.553 124.598 106.11 123.933 105.808 123.201C105.506 122.469 105.352 121.684 105.355 120.892V98.4847Z" />
@@ -28,7 +34,8 @@ const CommunityIcon = () => (
 export default function HomePage() {
   const hero = {
     name: "Arch Network",
-    tagline: "We are building the permissionless financial rails for a Bitcoin-denominated world.",
+    tagline: "Building the financial infrastructure for Bitcoin capital markets.",
+    description: "Arch is a vertically integrated execution and settlement stack — Arch Swap for trading, Arch Lend for credit, Arch Prime for portfolio management — purpose-built to scale Bitcoin-backed lending as the foundation for capital markets.",
     actions: [
       {
         theme: "brand",
@@ -56,25 +63,31 @@ export default function HomePage() {
   const features = [
     {
       title: "Learn",
-      details: "Arch provides an execution environment for developers who want to extend Bitcoin's functionality further.",
+      details: "Understand how Arch's infrastructure and product suite enable scalable Bitcoin credit and capital markets.",
       link: "/learn/overview",
       icon: <LearnIcon />
     },
     {
-      title: "Run a node",
+      title: "Product Suite",
+      details: "Explore Arch Swap, Arch Lend, Arch Prime, and yield vaults — the integrated financial products powering Bitcoin capital markets.",
+      link: "/products/overview",
+      icon: <ProductSuiteIcon />
+    },
+    {
+      title: "Run a Node",
       details: "Secure the network and earn Arch rewards.",
       link: "/nodes/overview",
       icon: <NodeIcon />
     },
     {
       title: "Developers",
-      details: "Create dynamic programs using rust.",
+      details: "Build on Arch using Rust.",
       link: "/developers/overview",
       icon: <DevelopersIcon />
     },
     {
       title: "Community",
-      details: "Join the Arch community to connect, collaborate, and contribute to the future of programmability on Bitcoin.",
+      details: "Connect with the Arch community.",
       link: "/community/overview",
       icon: <CommunityIcon />
     }
@@ -88,8 +101,13 @@ export default function HomePage() {
             <h1 className="mb-6 text-4xl lg:text-5xl font-bold">{hero.name}</h1>
           )}
           {hero.tagline && (
-            <p className="mb-8 text-lg text-fd-muted-foreground">
+            <p className="mb-4 text-lg text-fd-muted-foreground">
               {hero.tagline}
+            </p>
+          )}
+          {hero.description && (
+            <p className="mb-8 max-w-3xl text-base text-fd-muted-foreground">
+              {hero.description}
             </p>
           )}
           {hero.actions && (
@@ -112,7 +130,7 @@ export default function HomePage() {
         </div>
 
         {features && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {features.map((feature, idx) => (
               <Link
                 key={idx}

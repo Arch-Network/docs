@@ -1,0 +1,12 @@
+{
+  "title": "Fundamentals",
+  "pages": [
+    "overview",
+    "step-by-step-user-journey",
+    "state-transitions-anchored-on-bitcoin",
+    "bridgeless-execution",
+    "decentralized-validation",
+    "minimized-trust-assumptions",
+    "arch-signature-scheme-model-frost-roast"
+  ]
+}

@@ -32,7 +32,7 @@ Staking will not be active during the Testnet phase and as such details includin
 
 **What are the incentives to run a node?**
 
-Transaction fees. Arch-aware Dapps intake BTC as a fee payment for instructions processed by the Network. These BTC fees are converted to Arch token which are distributed amongst the Arch validator pool as an incentive for dedicating their compute resources to the network. 
+Transaction fees. Arch applications intake BTC as a fee payment for instructions processed by the Network. These BTC fees are converted to Arch token which are distributed amongst the Arch validator pool as an incentive for dedicating their compute resources to the network. 
 
 A breakdown about the math behind this distribution and fee structure will be covered in future versions of this document.
 

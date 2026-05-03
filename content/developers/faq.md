@@ -128,4 +128,4 @@ A: Arch validators also run Bitcoin full nodes. In this way, they are kept in-sy
 
 **Q: When a user calls a function that includes a PSBT, how does Arch ensure that a malicious validator doesn't steal the funds within the UTXO?**
 
-A: The transaction gets constructed by the dApp with the terms set (and signed) by the user. It then gets sent directly to Arch for second signing (of buying counterparty), validation, execution, etc. The ownership transfer between user and counterparty occurs once the now fully-signed Bitcoin transaction gets processed on Bitcoin.
+A: The transaction gets constructed by the application with the terms set (and signed) by the user. It then gets sent directly to Arch for second signing (of buying counterparty), validation, execution, etc. The ownership transfer between user and counterparty occurs once the now fully-signed Bitcoin transaction gets processed on Bitcoin.

@@ -1,0 +1,15 @@
+{
+  "title": "Architecture",
+  "pages": [
+    "overview",
+    "how-arch-works",
+    "the-deterministic-stack",
+    "archvm-execution",
+    "bitcoin-settlement",
+    "state-and-consensus",
+    "---Architecture Sub-pages (existing)---",
+    "consensus",
+    "execution",
+    "bitcoin-integration"
+  ]
+}

@@ -55,7 +55,7 @@ The following wallets currently support testnet4:
 
 ## Bitcoin Testnet4 Faucet
 
-In order to participate in the Arch testnet, testnet4 Bitcoin is required to pay for transactions and be used in dapps as a medium of exchange with swaps, lending protocols, etc.
+In order to participate in the Arch testnet, testnet4 Bitcoin is required to pay for transactions and be used in financial applications as a medium of exchange with swaps, lending markets, etc.
 
 You can request testnet4 BTC from the [testnet4 mempool.space faucet].
 

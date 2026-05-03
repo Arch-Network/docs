@@ -1,0 +1,14 @@
+{
+  "title": "Learn",
+  "pages": [
+    "introduction",
+    "overview",
+    "the-arch-thesis",
+    "the-bitcoin-builders-dilemma",
+    "the-arch-unlock",
+    "resources",
+    "running-a-node",
+    "architecture",
+    "fundamentals"
+  ]
+}

@@ -10,7 +10,7 @@ The sheer scope of Bitcoin adoption gives it unparalleled liquidity and security
 
 - **Data and State Storage:** Bitcoin's blockchain is optimized for storing transaction data rather than the state information required by complex smart contracts. The lack of statefulness in Bitcoin's design makes it challenging to implement dynamic smart contracts that can interact and update according to varying conditions.
 
-- **Execution Environment:** Bitcoin does not have a native execution environment that can run complex smart contracts. Platforms that support advanced dApps, like Ethereum, have a Virtual Machine (EVM) that provides a controlled environment for executing smart contracts.
+- **Execution Environment:** Bitcoin does not have a native execution environment that can run complex smart contracts. Platforms that support advanced applications, like Ethereum, have a Virtual Machine (EVM) that provides a controlled environment for executing smart contracts.
 
 For these reasons, most innovations in blockchain programmability have occurred on other chains over the past decade, namely, Ethereum. However, Bitcoin has increasingly proven its core promises of security and decentralization, while adding significant upgrades that are now paving the way for builders to add programmability. 
 
