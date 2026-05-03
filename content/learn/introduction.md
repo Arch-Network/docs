@@ -3,7 +3,6 @@ title: Introduction
 ---
 
 Welcome to Arch Network — the execution and settlement infrastructure for Bitcoin-native capital markets.
-Arch allows developers to tap into the full liquidity and security of the world’s most decentralized blockchain without forcing users to bridge. 
 
 Arch is not a general-purpose blockchain. It is a vertically integrated financial infrastructure stack purpose-built to make Bitcoin productive. At its core, Arch combines high-performance deterministic execution (300ms block times, ~1,000 TPS), native Bitcoin settlement via UTXO anchoring, and a FROST + ROAST threshold signature scheme — all designed to power scalable Bitcoin-backed credit.
 
