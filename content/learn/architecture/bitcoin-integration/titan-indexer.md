@@ -11,7 +11,7 @@ Titan distinguishes itself through several innovations:
 
 
 
-* **Mempool-Level Indexing:** Titan is the only Bitcoin indexer capable of real-time mempool indexing. Optimized for immediate blockchain data retrieval, Titan delivers the responsiveness required for Arch's pre-confirmation mechanism and DeFi applications.
+* **Mempool-Level Indexing:** Titan is the only Bitcoin indexer capable of real-time mempool indexing. Optimized for immediate blockchain data retrieval, Titan delivers the responsiveness required for Arch's pre-confirmation mechanism and financial applications.
 * **Runes Protocol Integration:** Built with native support for Bitcoin-based tokens, Titan provides comprehensive tracking and indexing of Runes tokens, enabling immediate access to token states, balances, and transfers.
 
 
@@ -21,7 +21,7 @@ For developers building on Arch Network, Titan provides:
 
 
 
-* **Reduced Latency:** Near-instantaneous data indexing ensures dApps remain responsive with minimal wait times for state updates.
+* **Reduced Latency:** Near-instantaneous data indexing ensures applications remain responsive with minimal wait times for state updates.
 * **Token-First Development:** Native Runes protocol support eliminates the need for additional middleware when building token-based applications.
 * **Enhanced Reliability:** By providing visibility into mempool-level transactions, Titan helps developers implement safeguards against front-running and other potential issues.
 

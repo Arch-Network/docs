@@ -1,0 +1,8 @@
+{
+  "title": "Bitcoin Integration",
+  "pages": [
+    "index",
+    "cryptographic-multisig-as-smart-contract-controlled-wallets",
+    "titan-indexer"
+  ]
+}

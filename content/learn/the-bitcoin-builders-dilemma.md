@@ -35,4 +35,4 @@ Even these solutions typically offer only incremental improvements with multi-se
 
 ✅ Arch solves this with a novel Taproot address compatibility account model–meaning users never need to leave their bitcoin wallet–and sub-second block times thanks to Arch's parallel execution model and consensus.
 
-Developers know that the next trillion dollar opportunity is unlocking DeFi and capital formation on pristine Bitcoin but had no way to access this market…until Arch.
+The opportunity isn't just unlocking programmability on Bitcoin — it's building the financial infrastructure that turns Bitcoin from a store of value into the foundation for global capital markets. That's what Arch does.

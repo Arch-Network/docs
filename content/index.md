@@ -5,8 +5,7 @@ titleTemplate: ":title"
 
 hero:
   name: "Arch Network"
-  # text: "Bridgeless Bitcoin Programmability"
-  tagline: We are building the permissionless financial rails for a Bitcoin-denominated world.
+  tagline: Building the financial infrastructure for Bitcoin capital markets.
   image:
     src: /arch-overview.png
     alt: Arch
@@ -26,19 +25,23 @@ hero:
 
 features:
   - title: Learn
-    details: Arch provides an execution environment for developers who want to extend Bitcoin's functionality further.
+    details: Understand how Arch's infrastructure and product suite enable scalable Bitcoin credit and capital markets.
     link: /learn/overview
     icon: 🏗️
-  - title: Run a node
+  - title: Product Suite
+    details: Explore Arch Swap, Arch Lend, Arch Prime, and yield vaults — the integrated financial products powering Bitcoin capital markets.
+    link: /products/overview
+    icon: 🧩
+  - title: Run a Node
     details: Secure the network and earn Arch rewards.
     link: /nodes/overview
     icon: 🔒
   - title: Developers
-    details: Create dynamic programs using rust.
+    details: Build on Arch using Rust.
     link: /developers/overview
     icon: ⚙️
   - title: Community
-    details: Join the Arch community to connect, collaborate, and contribute to the future of programmability on Bitcoin.
+    details: Connect with the Arch community.
     link: /community/overview
     icon: 🏰
 ---

@@ -2,12 +2,12 @@
 title: The Arch Unlock
 ---
 
-Arch expands what's possible in the Bitcoin ecosystem by providing a user and developer experience previously unattainable on Bitcoin. As the programmability layer that Bitcoin has been missing, Arch preserves the monetary integrity of pristine BTC while enabling an open, fast, and expressive economy. 
+Arch expands what's possible in the Bitcoin ecosystem by providing a user and developer experience previously unattainable on Bitcoin. As the financial infrastructure layer that Bitcoin has been missing, Arch preserves the monetary integrity of pristine BTC while enabling scalable Bitcoin-backed credit and capital markets.
 
 
 ## Seamless Bitcoin Wallet Integration
 
-Unlike other solutions that force users away from their Bitcoin wallet, Arch Network's novel Taproot address compatibility account model allows users to access Arch apps directly from their existing Bitcoin wallets:
+Unlike other solutions that force users away from their Bitcoin wallet, Arch Network's novel Taproot address compatibility account model allows users to access Arch applications directly from their existing Bitcoin wallets:
 
 
 
@@ -28,21 +28,26 @@ Arch's unique approach gives developers unprecedented flexibility in how they ba
 * **Customizable security models:** Choose the optimal point on the trust spectrum for each application or transaction type, breaking free from Bitcoin's security vs. innovation dilemma
     * **Direct Bitcoin settlement:** Process transactions directly on the Bitcoin base layer for maximum security when needed using Arch's high threshold signature scheme
     * **Pre-confirmation acceleration:** Utilize Arch's pre-confirmation system to achieve sub-second responsiveness, overcoming Bitcoin's inherent 10-minute block times
-* **Solana-like UX:** Deliver the smooth, instantaneous experiences users want without sacrificing Bitcoin's security guarantees
+* **Sub-second execution with native Bitcoin settlement:** Deliver responsive, instantaneous experiences without sacrificing Bitcoin's security guarantees
 
 This flexibility empowers developers to build applications that are both responsive and secure, without sacrificing either quality. Through Arch's UTXO-aware execution environment based on the eBPF virtual machine with custom syscalls, developers can finally implement complex financial applications interoperably with Bitcoin.
 
 
-## Supercharged Bitcoin Assets
+## Integrated Financial Product Suite
 
-While metaprotocols like Runes and BRC-20 have emerged as significant standards to tokenize assets on Bitcoin, they continue to struggle due to Bitcoin's slow block times and lack of expressivity. Arch has built infrastructure to optimize and make Bitcoin assets more frictionless and fungible.
+Arch doesn't provide tools for others to build financial products — Arch builds them. The product suite is vertically integrated by design:
+
+* **[Arch Swap](/products/arch-swap)** provides native BTC trading with atomic settlement, deep liquidity, and execution guarantees
+* **[Arch Lend](/products/arch-lend)** enables institutional-grade Bitcoin-backed lending with 300ms liquidation fidelity
+* **[Arch Prime](/products/arch-prime)** delivers real-time portfolio management — positions, collateral health, yield tracking, and risk exposure in a single dashboard
+* **[Yield Vaults](/products/yield-vaults)** deploy capital across lending markets and structured strategies to generate yield on Bitcoin
+
+This vertical integration is the structural advantage. Closed-loop liquidity between trading and lending enables the liquidation precision that makes scaled credit possible.
 
 
+## Institutional-Grade Risk Infrastructure
 
-* **UTXO management:** Specialized accounts model designed specifically for the complexities of UTXO asset organization
-* **State sharding:** Using sharding techniques to enhance throughput for state-dependent transactions
-* **Real-time mempool indexing:** Index Bitcoin, Ordinals, and Runes transactions in the mempool at significantly higher volumes than previously possible 
-* **Reliable block inclusion:** Leveraging robust fee estimation, state-chaining, and non-standard Bitcoin transactions, we provide developers with high probability block inclusion
-* **Improved liquidity mechanisms:** Enable efficient trading pools and marketplaces for Bitcoin-native assets, unlocking DeFi and capital formation on pristine Bitcoin
-
-Powered by Arch's decentralized validator network that facilitates the seamless coordination of Bitcoin-native transactions via stake-weighted dPoS consensus, Arch transforms how Bitcoin assets function. This enables them to scale effectively while maintaining the decentralized properties that make them valuable.
+* **300ms block finality** for deterministic liquidation — positions are enforced before market conditions can move against them
+* **UTXO-aware execution** ensures collateral state is always consistent with Bitcoin's base layer
+* **Native settlement** eliminates bridge risk — collateral is never held in intermediate custody
+* **High-throughput execution** (~1,000 TPS) supports institutional-scale trading and lending volumes

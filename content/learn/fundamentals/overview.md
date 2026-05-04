@@ -2,11 +2,11 @@
 title: Overview
 ---
 
-Arch is an execution platform that unlocks DeFi with full Turing-complete smart contract functionality without compromising the liquidity and security of the Bitcoin base layer, thanks to its trust-minimized and decentralized architecture. It maintains block consensus and transaction data availability on the Bitcoin base layer and allows for greater interoperability between L2s and metaprotocols that invoke smart contracts through it. 
+Arch is an execution platform that unlocks Bitcoin capital markets with full Turing-complete smart contract functionality without compromising the liquidity and security of the Bitcoin base layer, thanks to its trust-minimized and decentralized architecture. It maintains block consensus and transaction data availability on the Bitcoin base layer and allows for greater interoperability between L2s and metaprotocols that invoke smart contracts through it. 
 
 Arch uses a specialized VM to perform complex computation combined with a Decentralized Verifier Network and a FROST + ROAST signature scheme to enable trust-minimized and programmable multisigs.
 
-Arch builds upon the foundational pillars for creating a vibrant ecosystem directly on Bitcoin — smart contract programmability and trust-minimized interoperability — paving the way for a new wave of dApps and protocols on Bitcoin's base layer. 
+Arch builds upon the foundational pillars for creating a vibrant ecosystem directly on Bitcoin — smart contract programmability and trust-minimized interoperability — paving the way for a new wave of financial applications and protocols on Bitcoin's base layer. 
 
 The Arch VM
 
