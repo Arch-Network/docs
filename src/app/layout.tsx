@@ -12,7 +12,8 @@ export default function Layout({ children }: LayoutProps<'/'>) {
         <meta name="theme-color" content="#4E3AF1" />
       </head>
       <body className="flex flex-col min-h-screen">
-        <RootProvider>{children}</RootProvider>
+        {/* Static search: index is exported to /api/search and queried client-side (required for GitHub Pages) */}
+        <RootProvider search={{ options: { type: 'static' } }}>{children}</RootProvider>
       </body>
     </html>
   );
