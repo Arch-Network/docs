@@ -15,11 +15,11 @@ This is how traditional finance works — prime brokerages don't outsource their
 
 * **[Arch Swap](./arch-swap)** — Native BTC trading with atomic settlement
 * **[Arch Lend](./arch-lend)** — Bitcoin-backed credit with 300ms liquidation fidelity
-* **[Arch Prime](./arch-prime)** — Real-time portfolio management dashboard
+* **[Arch Prime](./arch-prime)** — On-chain prime services against native Bitcoin collateral
 * **[Yield Vaults](./yield-vaults)** — Automated yield strategies across lending and structured products
 
 ## How They Connect
 
-Arch Lend is the foundation. Scalable Bitcoin-backed credit creates the collateral infrastructure that everything else builds on. Arch Swap provides the liquidity and trading layer. Arch Prime gives institutions visibility and control. Yield Vaults deploy capital efficiently. Together, they form the base layer for Bitcoin capital markets.
+Arch Lend is the foundation. Scalable Bitcoin-backed credit creates the collateral infrastructure that everything else builds on. Arch Swap provides the liquidity and trading layer. Arch Prime is the on-chain prime account that borrows, deploys, and manages the whole position as a single margined book against native Bitcoin. Yield Vaults deploy capital efficiently. Together, they form the base layer for Bitcoin capital markets.
 
-For a deeper look at how the products operate as one system, see [How the Arch Products Work Together](./integration).
+For a deeper look at how the products operate as one system, see [How the Arch Products Work Together](./integration). For the mechanics of an Arch Prime account — collateral, borrowing, deployment, and closeout — see [How Arch Prime Works](./how-it-works).
