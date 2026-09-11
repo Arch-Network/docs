@@ -39,6 +39,7 @@ That distinction is the one that mattered in the collapses of FTX, Celsius and B
 ## Related Reading
 
 * [How Arch Prime Works](./how-it-works)
+* [Why a Purpose-Built Chain](./why-a-purpose-built-chain)
 * [Arch Lend](./arch-lend)
 * [Arch Swap](./arch-swap)
 * [How Products Work Together](./integration)
