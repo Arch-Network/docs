@@ -83,6 +83,7 @@ The place the collateral is sold is the place the reserve lives, so clearing the
 ## Related Reading
 
 * [Arch Prime](./arch-prime)
+* [Why a Purpose-Built Chain](./why-a-purpose-built-chain)
 * [Arch Lend](./arch-lend)
 * [Arch Swap](./arch-swap)
 * [How Products Work Together](./integration)
