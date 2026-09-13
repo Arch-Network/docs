@@ -12,13 +12,13 @@ The following details frequently asked questions from our developer community.
 
 A: We have a builders application form found on our [website](https://arch.network); interested developers can also join our [Discord](https://discord.gg/archnetwork), follow us on [X](https://x.com/archntwrk), read our developer [docs](https://docs.arch.network) and clone our [repositories](https://github.com/arch-network) to begin tinkering with contract development and learning more about the architecture.
 
-​https://0chrcuqp28m.typeform.com/to/fTaRfve6
+https://0chrcuqp28m.typeform.com/to/fTaRfve6
 
 **Q: What are the key innovations and values Arch Network plans to bring to the market to stand out from the rest in the early development stage?**
 
 A: We are leveraging a multisig with key ownership distributed amongst the Arch validators and secured using threshold-signatures schemes, notably: **FROST** (Flexible Round-Optimized Schnorr Threshold) used in conjunction with **ROAST** (Robust Asynchronous Schnorr Threshold Signatures) to facilitate communication between the signing parties.
 
-More can be read about these decisions here: https://medium.com/arch-network/a-deep-dive-into-multisig-architecture-on-arch-8ee47f5e20dc​
+More can be read about these decisions here: https://www.blog.arch.network/a-deep-dive-into-multisig-architecture-on-arch/
 
 **Q: Where can I find the onboarding documentation for examples and the SDK?**
 
@@ -28,7 +28,7 @@ A. We recommend developers read [The Arch Book](https://book.arch.network) to ge
 
 A: There is a network of validators. Each validator within the Arch Network controls a share in the network's distributed signing key (the multi-sig).  Every validator validates and processes transactions; the leader handles the block proposal and ROAST protocol.
 
-The leader receives the [RuntimeTransaction](https://book.arch.network/sdk/runtime-transaction.html) and proposes a new block to the other network participants. The validators execute the transaction in parallel and provide signatures for the transaction(s) as well as the block; these outputs (execution receipts, program data, and completed state transitions) are then shared back to the leader. After enough signatures have been collected (ie, a threshold has been met), the leader then submits a fully signed Bitcoin transaction to the Bitcoin network.
+The leader receives the [RuntimeTransaction](https://book.arch.network/docs/tools-apis/api-reference#send_transaction) and proposes a new block to the other network participants. The validators execute the transaction in parallel and provide signatures for the transaction(s) as well as the block; these outputs (execution receipts, program data, and completed state transitions) are then shared back to the leader. After enough signatures have been collected (ie, a threshold has been met), the leader then submits a fully signed Bitcoin transaction to the Bitcoin network.
 
 **Q: What is the simplest configuration for local testing and which NETWORK mode should we use?**
 
@@ -40,7 +40,7 @@ A: Currently, there are about 25 validators onboarded into the testnet, all comm
 
 **Q: How is Arch different than an L2?**
 
-A: See [Bitcoin Native vs. L2s & Metaprotocols](../learn/ecosystem/bitcoin-native-vs-l2-metaprotocols.md).
+A: See [Bridgeless Execution](/learn/fundamentals/bridgeless-execution).
 
 **Q: Is the network PoW or PoS?**
 
@@ -48,7 +48,7 @@ A: The network is PoS. Nodes stake tokens as economic security and face slashing
 
 **Q: What is the multisig architecture all about?**
 
-A: https://medium.com/arch-network/a-deep-dive-into-multisig-architecture-on-arch-8ee47f5e20dc​
+A: https://www.blog.arch.network/a-deep-dive-into-multisig-architecture-on-arch/
 
 **Q: How is concurrency handled with state UTXOs?**
 
@@ -56,7 +56,7 @@ A: Concurrency issues are managed on the backend, with nodes tracking UTXOs cont
 
 **Q: Where does the contract live?**
 
-A: The program logic (bytecode) and storage (state) lives in a key-value database within every validator node in the network. See [accounts](https://book.arch.network/program/account.html) for more information.
+A: The program logic (bytecode) and storage (state) lives in a key-value database within every validator node in the network. See [accounts](https://book.arch.network/docs/program/accounts) for more information.
 
 **Q: What is the transaction finalization speed on the network?**
 
