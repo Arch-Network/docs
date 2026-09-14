@@ -17,8 +17,8 @@ const ArchPrimeIcon = () => (
     aria-hidden="true"
     className="h-12 w-12 bg-[#EC641D] dark:bg-[#B8B3E8]"
     style={{
-      WebkitMaskImage: "url('/arch-prime-glyph.png')",
-      maskImage: "url('/arch-prime-glyph.png')",
+      WebkitMaskImage: "url('/arch-prime-glyph.svg')",
+      maskImage: "url('/arch-prime-glyph.svg')",
       WebkitMaskPosition: 'center',
       maskPosition: 'center',
       WebkitMaskRepeat: 'no-repeat',
