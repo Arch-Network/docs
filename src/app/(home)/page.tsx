@@ -38,8 +38,8 @@ const CommunityIcon = () => (
 export default function HomePage() {
   const hero = {
     name: "Arch Network",
-    tagline: "Building the financial infrastructure for Bitcoin capital markets.",
-    description: "Arch is a vertically integrated execution and settlement stack — Arch Swap for trading, Arch Lend for credit, Arch Prime for portfolio management — purpose-built to scale Bitcoin-backed lending as the foundation for capital markets.",
+    tagline: "The Clearing Layer for Bitcoin credit",
+    description: "Arch Network is a Layer 1 built for one job: clearing credit on Bitcoin — the risk infrastructure that lending, derivatives and structured products all depend on. Arch Prime is the prime brokerage built on it.",
     actions: [
       {
         theme: "alt",

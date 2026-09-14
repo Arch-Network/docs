@@ -2,8 +2,6 @@
 title: Overview
 ---
 
-Arch Network is a Layer 1 whose design is organized around one event, the moment a credit position has to be closed out. This page covers how that works and what runs on it.
-
 ## The network
 
 Arch Network is a Layer 1 whose design is organized around one event: the moment a credit position has to be closed out. This page covers how that works and what runs on it.
