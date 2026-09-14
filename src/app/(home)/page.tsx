@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 const LearnIcon = () => (
@@ -14,13 +13,19 @@ const DevelopersIcon = () => (
 );
 
 const ArchPrimeIcon = () => (
-  <Image
-    src="/arch-prime-glyph.png"
-    alt=""
-    width={64}
-    height={64}
-    unoptimized
-    className="h-12 w-12 object-contain"
+  <span
+    aria-hidden="true"
+    className="h-12 w-12 bg-[#EC641D] dark:bg-[#B8B3E8]"
+    style={{
+      WebkitMaskImage: "url('/arch-prime-glyph.png')",
+      maskImage: "url('/arch-prime-glyph.png')",
+      WebkitMaskPosition: 'center',
+      maskPosition: 'center',
+      WebkitMaskRepeat: 'no-repeat',
+      maskRepeat: 'no-repeat',
+      WebkitMaskSize: 'contain',
+      maskSize: 'contain',
+    }}
   />
 );
 
