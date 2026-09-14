@@ -19,6 +19,7 @@ const ArchPrimeIcon = () => (
     alt=""
     width={64}
     height={64}
+    unoptimized
     className="h-12 w-12 object-contain"
   />
 );
