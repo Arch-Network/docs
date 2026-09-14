@@ -30,7 +30,7 @@ features:
     icon: 🏗️
   - title: Arch Prime
     details: Explore Arch Prime — Bitcoin-native prime brokerage for collateral, credit, yield, and risk-managed execution.
-    link: /arch-prime/01-introduction/1.1-what-arch-prime-is
+    link: /prime/01-what-arch-prime-is
     icon: 🧩
   - title: Run a Node
     details: Secure the network and earn Arch rewards.
