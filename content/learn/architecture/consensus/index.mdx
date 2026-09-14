@@ -4,10 +4,10 @@ title: Consensus
 
 Arch's consensus is powered by Arch's native token using a dPoS model for block production and threshold key distribution. The network state and activity is propagated across nodes via the [GossipSub protocol](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub), ensuring that all validators receive updates in a decentralized and fault-tolerant manner. Leveraging FROST + ROAST, Arch comes to consensus on new user-submitted Bitcoin UTXOs and settles them directly on Bitcoin with our cryptographic multi-sig architecture.
 
-<DocImage 
-  lightSrc="/Consensus-light.svg" 
-  darkSrc="/Consensus-dark.svg" 
-  alt="Arch Consensus Overview" 
+<DocImage
+  lightSrc="/Consensus-light.svg"
+  darkSrc="/Consensus-dark.svg"
+  alt="Arch Consensus Overview"
 />
 
 ## Block Production
@@ -38,13 +38,13 @@ Arch's unique approach to state management leverages Bitcoin's UTXO model while 
 
 The FROST signing process implements a sophisticated threshold signature scheme that distributes trust across multiple validators. Each validator generates their partial signature using their unique secret key share, contributing to the collective security of the network. These partial signatures are then shared among the threshold group, creating a collaborative verification environment where no single entity controls the entire signing process. The system aggregates these partial signatures into a final consolidated signature that represents the distributed consensus of the participating validators. Before acceptance, this aggregated signature undergoes verification against the group public key, ensuring that it is valid, thereby enabling secure transaction validation without requiring trust in any single validator.
 
-[Learn more about FROST →](./frost)
+[Learn more about FROST →](./consensus/frost)
 
 ### ROAST Enhancement Layer
 
-ROAST transforms FROST into a production-ready consensus mechanism by adding crucial enhancements for real-world deployment. It provides asynchronous operation guarantees, allowing validators to participate in signing rounds without tight timing constraints. The protocol progresses even when some validators are temporarily delayed or when network conditions are suboptimal. The system implements Byzantine Fault Tolerance, maintaining safety and liveness even in the presence of malicious actors by tolerating up to *f* Byzantine validators where *f < n * 49/100*, detecting and isolating malicious behavior, and excluding signature shares from Byzantine validators. The leader rotation mechanism deterministically selects leaders based on stake weight and randomness, automatically rotates them to prevent centralization, and provides backup leaders for fault tolerance.
+ROAST transforms FROST into a production-ready consensus mechanism by adding crucial enhancements for real-world deployment. It provides asynchronous operation guarantees, allowing validators to participate in signing rounds without tight timing constraints. The protocol progresses even when some validators are temporarily delayed or when network conditions are suboptimal. The system implements Byzantine Fault Tolerance, maintaining safety and liveness even in the presence of malicious actors by tolerating up to _f_ Byzantine validators where _f < n _ 49/100\*, detecting and isolating malicious behavior, and excluding signature shares from Byzantine validators. The leader rotation mechanism deterministically selects leaders based on stake weight and randomness, automatically rotates them to prevent centralization, and provides backup leaders for fault tolerance.
 
-[Learn more about ROAST →](./roast)
+[Learn more about ROAST →](./consensus/roast)
 
 ### Liveness Guarantees
 
@@ -52,4 +52,4 @@ ROAST ensures the network continues to make progress through several sophisticat
 
 ### Instant Finality
 
-Once consensus is achieved, the network either has a valid signature or it doesn't, resulting in instant finality that doesn't allow the chain to fork. 
+Once consensus is achieved, the network either has a valid signature or it doesn't, resulting in instant finality that doesn't allow the chain to fork.
