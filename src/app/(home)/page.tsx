@@ -42,45 +42,37 @@ export default function HomePage() {
     description: "Arch is a vertically integrated execution and settlement stack — Arch Swap for trading, Arch Lend for credit, Arch Prime for portfolio management — purpose-built to scale Bitcoin-backed lending as the foundation for capital markets.",
     actions: [
       {
-        theme: "brand",
-        text: "Build",
-        link: "https://form.typeform.com/to/T7JQQikg"
-      },
-      {
         theme: "alt",
-        text: "Overview",
-        link: "/learn/overview"
-      },
-      {
-        theme: "alt",
-        text: "Arch Book",
-        link: "https://book.arch.network"
+        text: "Developer Docs",
+        link: "https://book.arch.network",
+        external: true
       },
       {
         theme: "alt",
         text: "Whitepaper",
-        link: "https://docs.arch.network/whitepaper.pdf"
-      }
+        link: "https://docs.arch.network/whitepaper.pdf",
+        external: true
+      },
     ]
   };
 
   const features = [
     {
-      title: "Learn",
+      title: "Introduction",
       details: "Understand how Arch's infrastructure and product suite enable scalable Bitcoin credit and capital markets.",
-      link: "/learn/overview",
+      link: "/learn/introduction",
       icon: <LearnIcon />
     },
     {
       title: "Arch Prime",
-      details: "Explore Arch Prime — Bitcoin-native prime brokerage for collateral, credit, yield, and risk-managed execution.",
+      details: "Bitcoin-native prime brokerage for collateral, credit, yield, and risk-managed execution.",
       link: "/prime/01-what-arch-prime-is",
       icon: <ArchPrimeIcon />
     },
     {
-      title: "Developers",
-      details: "Build on Arch using Rust.",
-      link: "/developers/overview",
+      title: "Arch Network",
+      details: "Arch Network is an independent chain with its own VM, consensus and validator set.",
+      link: "/arch-network/overview",
       icon: <DevelopersIcon />
     },
     {
@@ -108,23 +100,7 @@ export default function HomePage() {
               {hero.description}
             </p>
           )}
-          {hero.actions && (
-            <div className="flex flex-wrap gap-4">
-              {hero.actions.map((action, idx) => (
-                <Link
-                  key={idx}
-                  href={action.link}
-                  className={
-                    action.theme === 'brand'
-                      ? 'inline-flex px-6 py-3 bg-fd-primary text-fd-primary-foreground rounded-lg font-semibold hover:bg-fd-primary/90 transition-colors'
-                      : 'inline-flex px-6 py-3 border border-fd-border rounded-lg font-semibold hover:bg-fd-accent transition-colors'
-                  }
-                >
-                  {action.text}
-                </Link>
-              ))}
-            </div>
-          )}
+          
         </div>
 
         {features && (
@@ -148,6 +124,27 @@ export default function HomePage() {
             ))}
           </div>
         )}
+
+        {hero.actions && (
+            <div className="flex flex-wrap gap-4 mt-8 border-t border-fd-border pt-8">
+              {hero.actions.map((action, idx) => (
+                <Link
+                  key={idx}
+                  href={action.link}
+                  className={
+                    action.theme === 'brand'
+                      ? 'inline-flex px-6 py-3 bg-fd-primary text-fd-primary-foreground rounded-lg font-semibold hover:bg-fd-primary/90 transition-colors items-center'
+                      : 'inline-flex px-6 py-3 border border-fd-border rounded-lg font-semibold hover:bg-fd-accent transition-colors items-center'
+                  }
+                >
+                  {action.text} {action.external && <span className="ml-2 inline-flex align-middle" aria-label="External link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><path d="M13 3h4v4m-10 6l7-7M17 17H7a2 2 0 0 1-2-2V7"></path></svg>
+                  </span>}
+                </Link>
+         
+              ))}
+            </div>
+          )}
       </div>
     </main>
   );

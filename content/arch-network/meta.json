@@ -1,5 +1,5 @@
 {
-  "title": "Architecture",
+  "title": "Arch Network",
   "pages": [
     "overview",
     "how-arch-works",
@@ -9,6 +9,9 @@
     "state-and-consensus",
     "consensus",
     "execution",
-    "bitcoin-integration"
+    "bitcoin-integration",
+    "fundamentals",
+    "developers",
+    "running-a-node"
   ]
 }

@@ -1,0 +1,26 @@
+---
+title: Intro
+description: Arch Network is a Layer 1 built for a single job clearing credit on Bitcoin.
+---
+
+<div className="arch-combines-image">
+  <DocImage 
+    lightSrc="/arch-combines-light.svg" 
+    darkSrc="/arch-combines-dark.svg" 
+    alt="Arch Network Layers"
+  />
+</div>
+
+
+Clearing is the machinery that sits behind a loan: pricing a position, seizing collateral when it breaches, and settling the proceeds with finality. General-purpose chains treat that as one, undifferentiated transaction competing for block space. Arch is designed around that limitation: liquidations get a reserved priority lane, and pricing, execution and settlement happen in a single atomic state transition.
+
+Arch is an independent chain with its own VM, consensus and validator set — not an L2. Finality occurs on Arch within 300ms and can optionally settle to Bitcoin with a natively-constructed Bitcoin transaction by the ArchVM, signed by validators under a FROST + ROAST threshold scheme, and settled on Bitcoin's base layer. ~1,000 TPS, Taproot-native.
+
+The network issues archUSD, the dollar credit on Arch is denominated in and settled against. Backed 1:1 by USDC.
+
+Two things share the name. *Arch Network* is the chain described above — neutral infrastructure anyone extending credit can settle through. *Arch Prime* is a prime brokerage built on it: the network's anchor tenant, and the first business clearing through it at scale. Most of these docs are clearer if you keep them apart.
+
+No custodial risk. Your assets remain in distributed threshold control, NOT a balance sheet.
+
+Next: [Overview](/learn/overview) for what the network runs and where it stands · [The Arch Thesis](/learn/the-arch-thesis) for why credit needs its own chain.
+
