@@ -1,0 +1,11 @@
+{
+  "title": "For Builders",
+  "pages": [
+    "7.1-integrating-with-arch-prime",
+    "7.2-the-account-model",
+    "7.3-atomic-bundles",
+    "7.4-reading-account-state",
+    "7.5-participating-in-liquidations",
+    "7.6-environments-and-where-the-reference-lives"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Risks",
+  "pages": [
+    "4.1-how-to-read-this-section",
+    "4.2-leverage-and-market-risk",
+    "4.3-strategy-and-nav-risk",
+    "4.4-liquidity-and-redemption-risk",
+    "4.5-counterparty-risk",
+    "4.6-price-and-oracle-risk",
+    "4.7-protocol-validator-and-upgrade-risk",
+    "4.8-settlement-and-reorganization-risk",
+    "4.9-what-arch-does-not-protect-you-from"
+  ]
+}
