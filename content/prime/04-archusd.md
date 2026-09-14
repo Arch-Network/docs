@@ -1,8 +1,8 @@
 ---
 title: archUSD
+description: archUSD is the dollar the Arch ecosystem runs on. It is issued by Arch Network, backed one-for-one by liquid USDC held off-chain in custody at BitGo and Copper, and it is the unit positions settle in and the unit client debt is denominated in.
 ---
 
-archUSD is the dollar the Arch ecosystem runs on. It is issued by Arch Network, backed one-for-one by liquid USDC held off-chain in custody at BitGo and Copper, and it is the unit positions settle in and the unit client debt is denominated in.
 
 ## The mechanism
 

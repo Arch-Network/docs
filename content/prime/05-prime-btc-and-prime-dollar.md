@@ -1,8 +1,8 @@
 ---
 title: Prime BTC and Prime Dollar
+description: Prime BTC and Prime Dollar are the yield instruments an Arch Prime account deploys into. Each gives spot exposure to its base asset plus a return from market-neutral quantitative strategies.
 ---
 
-Prime BTC and Prime Dollar are the yield instruments an Arch Prime account deploys into. Each gives spot exposure to its base asset plus a return from market-neutral quantitative strategies.
 
 | | Prime BTC | Prime Dollar |
 |---|---|---|

@@ -1,8 +1,7 @@
 ---
 title: What Arch Prime is
+description: Arch Prime brings prime services to Bitcoin, on-chain. One account, holding native Bitcoin as collateral, that borrows against it, deploys into yield strategies, and manages the whole position as a single margined book.
 ---
-
-Arch Prime brings prime services to Bitcoin, on-chain. One account, holding native Bitcoin as collateral, that borrows against it, deploys into yield strategies, and manages the whole position as a single margined book.
 
 It runs on Arch Network — a Bitcoin-native chain that holds the collateral, authorizes any movement of it through threshold cryptography, and settles it on the Bitcoin network. Programs govern the movement of the UTXOs: no counterparty, custodian or operator performs a subsequent operation to make it happen. Arch Prime extends the credit; Arch Network clears and settles it.
 
