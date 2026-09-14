@@ -225,6 +225,16 @@ function sidebarHome() {
       collapsed: true,
       items: [
         { text: 'Overview', link: '/developers/overview ' },
+
+        {
+          text: 'Token Walkthroughs',
+          collapsed: true,
+          items: [
+            { text: 'Getting Started', link: '/developers/token/walkthrough' },
+            { text: 'Advanced', link: '/developers/token/walkthrough-advanced' }
+          ]
+        },
+
         {
           text: 'Testnet',
           collapsed: true,
