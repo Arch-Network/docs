@@ -10,7 +10,7 @@ The following details frequently asked questions from our developer community.
 
 **Q: How do developers and businesses get involved with Arch Network, and what resources and support are available to them?**
 
-A: We have a builders application form found on our [website](https://arch.network); interested developers can also join our [Discord](https://discord.gg/archnetwork), follow us on [X](https://x.com/archntwrk), read our developer [docs](https://docs.arch.network) and clone our [repositories](https://github.com/arch-network) to begin tinkering with contract development and learning more about the architecture.
+A: We have a builders application form found on our [website](https://arch.network); interested developers can also join our [Discord](https://discord.gg/archnetwork), follow us on [X](https://x.com/arch), read our developer [docs](https://docs.arch.network) and clone our [repositories](https://github.com/arch-network) to begin tinkering with contract development and learning more about the architecture.
 
 ​https://0chrcuqp28m.typeform.com/to/fTaRfve6
 

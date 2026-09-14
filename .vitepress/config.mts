@@ -93,8 +93,8 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/arch-network' },
-      { icon: 'x', link: 'https://x.com/archntwrk' },
-      { icon: 'discord', link: 'https://discord.gg/archnetwork' }
+      { icon: 'x', link: 'https://x.com/arch' },
+      { icon: 'discord', link: 'https://discord.gg/arch' }
     ]
   }
 })
