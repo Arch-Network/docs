@@ -23,7 +23,7 @@ This is what makes Arch fundamentally different from EVM-based chains that use w
 
 ## Solana-Compatible Programming Model
 
-The ArchVM supports programs written in Rust using the Anchor framework. Developers familiar with Solana's account model and instruction pattern will find the programming interface familiar. The Satellite framework provides migration tooling for porting existing Anchor programs. See the [For Solana Developers](/developers/for-solana-developers) guide for details.
+The ArchVM supports programs written in Rust using the Anchor framework. Developers familiar with Solana's account model and instruction pattern will find the programming interface familiar. The Satellite framework provides migration tooling for porting existing Anchor programs. See the [For Solana Developers](/arch-network/developers/for-solana-developers) guide for details.
 
 ## How It Connects
 

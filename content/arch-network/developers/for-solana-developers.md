@@ -32,10 +32,10 @@ For detailed migration steps, code examples, and common patterns, see the Satell
 
 ## Getting Started
 
-The fastest path is to start with the Satellite quickstart template, which includes a working Anchor-to-Arch example program. From there, consult the [Architecture Overview](/learn/architecture/overview) for how Arch's runtime differs from Solana's, and the [Developers section](/developers/overview) for Arch-specific APIs and tooling.
+The fastest path is to start with the Satellite quickstart template, which includes a working Anchor-to-Arch example program. From there, consult the [Architecture Overview](/arch-network/overview) for how Arch's runtime differs from Solana's, and the [Developers section](/arch-network/developers/overview) for Arch-specific APIs and tooling.
 
 ## Related Reading
 
-* [ArchVM & Execution](/learn/architecture/archvm-execution)
-* [Bitcoin Settlement](/learn/architecture/bitcoin-settlement)
-* [How Arch Works](/learn/architecture/how-arch-works)
+* [ArchVM & Execution](/arch-network/archvm-execution)
+* [Bitcoin Settlement](/arch-network/bitcoin-settlement)
+* [How Arch Works](/arch-network/how-arch-works)
