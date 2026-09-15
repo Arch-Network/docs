@@ -6,21 +6,25 @@ const LearnIcon = () => (
   </svg>
 );
 
-const NodeIcon = () => (
-  <svg width="267" height="338" viewBox="0 0 267 338" className="w-12 h-12 fill-[#EC641D] dark:fill-[#B8B3E8]" xmlns="http://www.w3.org/2000/svg">
-    <path d="M246.748 135.373H233.135V99.8972C233.135 44.8131 188.322 0 133.232 0C78.1426 0 33.3294 44.8131 33.3294 99.8972V135.373H19.7164C8.84762 135.373 0 144.221 0 155.09V317.33C0 328.204 8.84762 337.052 19.7164 337.052H246.748C257.617 337.052 266.47 328.204 266.47 317.33V155.09C266.47 144.221 257.617 135.373 246.748 135.373ZM149.578 238.368C148.69 238.92 148.155 239.893 148.155 240.935V277.897C148.155 286.13 141.459 292.82 133.232 292.82C125.005 292.82 118.31 286.13 118.31 277.897V240.935C118.31 239.893 117.775 238.92 116.886 238.368C107.766 232.68 102.323 222.87 102.323 212.138C102.323 195.092 116.192 181.228 133.232 181.228C150.273 181.228 164.142 195.092 164.142 212.138C164.142 222.87 158.699 232.68 149.578 238.368ZM197.175 135.373H69.2893V97.7508C69.2893 62.497 97.9785 33.8134 133.232 33.8134C168.486 33.8134 197.175 62.497 197.175 97.7508V135.373Z" />
-  </svg>
-);
-
 const DevelopersIcon = () => (
   <svg width="380" height="323" viewBox="0 0 380 323" className="w-12 h-12 fill-[#EC641D] dark:fill-[#B8B3E8]" xmlns="http://www.w3.org/2000/svg">
     <path d="M303.65 0H75.9125C34.055 0 0 34.055 0 75.9125V189.781C0 231.639 34.055 265.694 75.9125 265.694H170.803V284.672H132.847C122.366 284.672 113.869 293.169 113.869 303.65C113.869 314.131 122.366 322.628 132.847 322.628H246.716C257.196 322.628 265.694 314.131 265.694 303.65C265.694 293.169 257.196 284.672 246.716 284.672H208.759V265.694H303.65C345.508 265.694 379.562 231.639 379.562 189.781V75.9125C379.562 34.055 345.508 0 303.65 0ZM129.437 172.999C133.458 176.354 134.005 182.34 130.651 186.371C128.77 188.623 126.073 189.781 123.349 189.781C121.208 189.781 119.058 189.058 117.279 187.585L60.3445 140.14C58.1854 138.333 56.9344 135.664 56.9344 132.847C56.9344 130.03 58.1854 127.361 60.3445 125.554L117.279 78.1087C121.328 74.7634 127.287 75.2916 130.651 79.3226C134.005 83.3536 133.458 89.3399 129.437 92.6944L81.2501 132.847L129.437 172.999ZM226.385 90.2851L169.45 185.176C167.671 188.141 164.53 189.781 161.305 189.781C159.646 189.781 157.96 189.346 156.431 188.428C151.936 185.732 150.481 179.903 153.178 175.409L210.112 80.518C212.818 76.0237 218.638 74.5781 223.132 77.2654C227.626 79.962 229.081 85.7908 226.385 90.2851ZM319.218 140.14L262.284 187.585C260.504 189.058 258.355 189.781 256.214 189.781C253.49 189.781 250.793 188.623 248.912 186.371C245.557 182.34 246.104 176.354 250.126 172.999L298.312 132.847L250.126 92.6944C246.104 89.3399 245.557 83.3536 248.912 79.3226C252.276 75.2916 258.243 74.7634 262.284 78.1087L319.218 125.554C321.377 127.361 322.628 130.03 322.628 132.847C322.628 135.664 321.377 138.333 319.218 140.14Z" />
   </svg>
 );
 
-const ProductSuiteIcon = () => (
-  <svg viewBox="0 0 24 24" className="w-12 h-12 fill-[#EC641D] dark:fill-[#B8B3E8]" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z" />
+const ArchPrimeIcon = () => (
+  <svg
+    width="544"
+    height="393"
+    viewBox="0 0 544 393"
+    className="h-12 w-12 fill-[#EC641D] dark:fill-[#B8B3E8]"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M92.3048 392.347H74.1776L5.52914 392.338C1.19219 392.338 -1.44278 387.63 0.840883 383.994L226.923 24.7288C236.684 9.26366 253.494 0.000329024 271.969 0C290.444 0.00026095 307.254 9.22559 317.014 24.7288L543.094 383.994C545.379 387.63 542.746 392.338 538.408 392.338H520.203L451.238 392.347C449.34 392.347 447.556 391.39 446.549 389.782L306.285 166.172C302.566 160.277 297.492 155.568 291.606 152.314C285.68 149.061 278.979 147.301 271.931 147.301C257.833 147.301 245.011 154.343 237.575 166.172L96.993 389.782C95.9859 391.39 94.2024 392.347 92.3048 392.347Z"
+    />
   </svg>
 );
 
@@ -34,55 +38,41 @@ const CommunityIcon = () => (
 export default function HomePage() {
   const hero = {
     name: "Arch Network",
-    tagline: "Building the financial infrastructure for Bitcoin capital markets.",
-    description: "Arch is a vertically integrated execution and settlement stack — Arch Swap for trading, Arch Lend for credit, Arch Prime for portfolio management — purpose-built to scale Bitcoin-backed lending as the foundation for capital markets.",
+    tagline: "The Clearing Layer for Bitcoin credit",
+    description: "Arch Network is a Layer 1 built for one job: clearing credit on Bitcoin — the risk infrastructure that lending, derivatives and structured products all depend on. Arch Prime is the prime brokerage built on it.",
     actions: [
       {
-        theme: "brand",
-        text: "Build",
-        link: "https://form.typeform.com/to/T7JQQikg"
-      },
-      {
         theme: "alt",
-        text: "Overview",
-        link: "/learn/overview"
-      },
-      {
-        theme: "alt",
-        text: "Arch Book",
-        link: "https://book.arch.network"
+        text: "Developer Docs",
+        link: "https://book.arch.network",
+        external: true
       },
       {
         theme: "alt",
         text: "Whitepaper",
-        link: "https://docs.arch.network/whitepaper.pdf"
-      }
+        link: "https://docs.arch.network/whitepaper.pdf",
+        external: true
+      },
     ]
   };
 
   const features = [
     {
-      title: "Learn",
+      title: "Introduction",
       details: "Understand how Arch's infrastructure and product suite enable scalable Bitcoin credit and capital markets.",
-      link: "/learn/overview",
+      link: "/learn/introduction",
       icon: <LearnIcon />
     },
     {
-      title: "Product Suite",
-      details: "Explore Arch Swap, Arch Lend, Arch Prime, and yield vaults — the integrated financial products powering Bitcoin capital markets.",
-      link: "/products/overview",
-      icon: <ProductSuiteIcon />
+      title: "Arch Prime",
+      details: "Bitcoin-native prime brokerage for collateral, credit, yield, and risk-managed execution.",
+      link: "/prime/01-what-arch-prime-is",
+      icon: <ArchPrimeIcon />
     },
     {
-      title: "Run a Node",
-      details: "Secure the network and earn Arch rewards.",
-      link: "/nodes/overview",
-      icon: <NodeIcon />
-    },
-    {
-      title: "Developers",
-      details: "Build on Arch using Rust.",
-      link: "/developers/overview",
+      title: "Arch Network",
+      details: "Arch Network is an independent chain with its own VM, consensus and validator set.",
+      link: "/arch-network/overview",
       icon: <DevelopersIcon />
     },
     {
@@ -110,23 +100,7 @@ export default function HomePage() {
               {hero.description}
             </p>
           )}
-          {hero.actions && (
-            <div className="flex flex-wrap gap-4">
-              {hero.actions.map((action, idx) => (
-                <Link
-                  key={idx}
-                  href={action.link}
-                  className={
-                    action.theme === 'brand'
-                      ? 'inline-flex px-6 py-3 bg-fd-primary text-fd-primary-foreground rounded-lg font-semibold hover:bg-fd-primary/90 transition-colors'
-                      : 'inline-flex px-6 py-3 border border-fd-border rounded-lg font-semibold hover:bg-fd-accent transition-colors'
-                  }
-                >
-                  {action.text}
-                </Link>
-              ))}
-            </div>
-          )}
+          
         </div>
 
         {features && (
@@ -150,6 +124,27 @@ export default function HomePage() {
             ))}
           </div>
         )}
+
+        {hero.actions && (
+            <div className="flex flex-wrap gap-4 mt-8 border-t border-fd-border pt-8">
+              {hero.actions.map((action, idx) => (
+                <Link
+                  key={idx}
+                  href={action.link}
+                  className={
+                    action.theme === 'brand'
+                      ? 'inline-flex px-6 py-3 bg-fd-primary text-fd-primary-foreground rounded-lg font-semibold hover:bg-fd-primary/90 transition-colors items-center'
+                      : 'inline-flex px-6 py-3 border border-fd-border rounded-lg font-semibold hover:bg-fd-accent transition-colors items-center'
+                  }
+                >
+                  {action.text} {action.external && <span className="ml-2 inline-flex align-middle" aria-label="External link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><path d="M13 3h4v4m-10 6l7-7M17 17H7a2 2 0 0 1-2-2V7"></path></svg>
+                  </span>}
+                </Link>
+         
+              ))}
+            </div>
+          )}
       </div>
     </main>
   );

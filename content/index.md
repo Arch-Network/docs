@@ -28,9 +28,9 @@ features:
     details: Understand how Arch's infrastructure and product suite enable scalable Bitcoin credit and capital markets.
     link: /learn/overview
     icon: 🏗️
-  - title: Product Suite
-    details: Explore Arch Swap, Arch Lend, Arch Prime, and yield vaults — the integrated financial products powering Bitcoin capital markets.
-    link: /products/overview
+  - title: Arch Prime
+    details: Explore Arch Prime — Bitcoin-native prime brokerage for collateral, credit, yield, and risk-managed execution.
+    link: /prime/01-what-arch-prime-is
     icon: 🧩
   - title: Run a Node
     details: Secure the network and earn Arch rewards.

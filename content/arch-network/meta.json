@@ -1,0 +1,17 @@
+{
+  "title": "Arch Network",
+  "pages": [
+    "overview",
+    "how-arch-works",
+    "the-deterministic-stack",
+    "archvm-execution",
+    "bitcoin-settlement",
+    "state-and-consensus",
+    "consensus",
+    "execution",
+    "bitcoin-integration",
+    "fundamentals",
+    "developers",
+    "running-a-node"
+  ]
+}

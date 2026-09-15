@@ -1,0 +1,11 @@
+{
+  "title": "How It Works",
+  "pages": [
+    "2.1-the-margin-account",
+    "2.2-posting-collateral",
+    "2.3-buying-power-and-borrowing",
+    "2.4-deploying-the-yield-marketplace",
+    "2.5-account-health-and-liquidation",
+    "2.6-settlement-on-bitcoin"
+  ]
+}
