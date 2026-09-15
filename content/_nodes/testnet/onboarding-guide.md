@@ -122,4 +122,4 @@ curl $BTC_RPC_URL/$BTC_RPC_KEY -d '{"method":"getblockchaininfo","params":[],"id
 [Common Problems]: #common-problems
 
 <!-- External -->
-[[arch-node releases]: https://github.com/Arch-Network/arch-node/releases
+[arch-node releases]: https://github.com/Arch-Network/arch-node/releases

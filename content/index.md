@@ -34,11 +34,11 @@ features:
     icon: 🧩
   - title: Run a Node
     details: Secure the network and earn Arch rewards.
-    link: /nodes/overview
+    link: /arch-network/running-a-node
     icon: 🔒
   - title: Developers
     details: Build on Arch using Rust.
-    link: /developers/overview
+    link: /arch-network/developers/overview
     icon: ⚙️
   - title: Community
     details: Connect with the Arch community.
