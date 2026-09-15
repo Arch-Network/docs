@@ -40,7 +40,7 @@ A: Currently, there are about 25 validators onboarded into the testnet, all comm
 
 **Q: How is Arch different than an L2?**
 
-A: See [Bridgeless Execution](/learn/fundamentals/bridgeless-execution).
+A: See [Bridgeless Execution](/arch-network/fundamentals/bridgeless-execution).
 
 **Q: Is the network PoW or PoS?**
 
